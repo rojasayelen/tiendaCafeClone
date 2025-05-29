@@ -1,0 +1,19 @@
+.hero {
+      background-color: var(--color-primary);
+      padding: 20px;
+      text-align: start;
+}
+
+.hero-content {
+      max-width: 800px;
+      margin: 0 auto;
+      color: var(--color-white);
+}
+
+.productos-destacados{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: var(--spacing-md);
+      padding: var(--spacing-lg);
+}
