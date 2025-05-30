@@ -58,7 +58,7 @@ body {
 
 /* Ejemplo de uso de variables */
 h1, h2, h3 {
-  color: var(--color-primary);
+  color: var(--color-text);
 }
 
 a {
