@@ -23,11 +23,17 @@ tratrabajo_practico_obligatorio1/
 ├── franquicias.html
 ├── contacto.html
 │
+├── components/
+│ └── nav.html
+│ └── footer.html
+│
 ├── css/
 │ └── styles.css # Archivo principal de estilos CSS (pueden incluir alguno más)
-│ └── menu-tienda-styles.css  #Archivo de estilos del menú 
+│
 ├── js/
-│ └── scripts.js # (opcional) Todavía no llegamos a este punto
+│ └── main.js
+│ └── index.js 
+│ └── menu-tienda.js 
 │
 ├── img/
 │ ├── logo.png # Ejemplo de logo o imagen
