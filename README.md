@@ -28,9 +28,7 @@ tratrabajo_practico_obligatorio1/
 │ └── footer.html
 │
 ├── css/
-│ └── styles.css
-│ └── index.css
-│ └── menu-tienda-styles.css
+│ └── styles.css # Archivo principal de estilos CSS (pueden incluir alguno más)
 │
 ├── js/
 │ └── main.js
@@ -125,8 +123,3 @@ button:hover {
 }
 
 ```
-# 📷 Capturas
-
-![Página de inicio](img/capturas/Captura%20de%20pantalla%202025-05-30%20114511.png)
-
-![Slider de productos destacados](img/capturas/Captura%20de%20pantalla%202025-05-30%20114527.png)
