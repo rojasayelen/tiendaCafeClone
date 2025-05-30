@@ -212,7 +212,7 @@ span {
     }
 
 
-.main.titles {
+.main-titles {
     font-family: var(--font-main);
     color: var(--color-white);
     font-size: 4.2rem;
@@ -227,7 +227,7 @@ span {
 }
 
 /* Main Content */
-.container {
+.container-menu {
     max-width: 95vw;
     margin: 0 auto;
     padding: 0 1rem;
@@ -238,6 +238,7 @@ span {
     column-count: 2;
     column-gap: 1rem;
     margin: 2rem auto;
+    margin-bottom: 0;   
 }
 
 @media (min-width: 768px) {
@@ -329,12 +330,51 @@ span {
 
 */
 /* Sections */
-.section {
+
+.menu {
     text-align: center;
-    margin: 3rem 0;
+    background-color: #DDDDDD;
+    padding-top: 5rem;
+    margin-top: 0;
+}
+
+#menu-title {
+    font-family: var(--font-main);
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #111827;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+
+
+.sucursal-cerca {
+    background-image: url('../img/footer-bckgd.jpg');
+    background-size: cover;
+    margin: 0;
     padding-top: 2rem;
     border-top: 1px solid #e5e7eb;
 }
+
+
+
+
+.sucursal-cerca-title{
+    text-align: center;
+    color: var(--color-white);
+}
+
+#sucursal-cerca-subtitle{
+    text-align: center;
+    font-family: var(--font-main);
+    font-weight: 800;
+    color: var(--color-secondary)
+}
+
+
+
+
 
 .section-title {
     font-size: 1.875rem;
