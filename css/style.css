@@ -7,7 +7,8 @@
   --color-secondary: #c7a17a;     /* Dorado claro / acento */
   --color-white: #ffffff;
   --color-text: #1e1e1e;
-  --color-background: #fefefe;
+  --color-background: #ffffff;
+  --color-background-2: #f5f5f5;
 
   /* Tipografía */
   --font-main: 'Oswald', Arial, Helvetica, sans-serif;

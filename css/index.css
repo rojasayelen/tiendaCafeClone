@@ -72,7 +72,8 @@ h1 {
   gap: var(--spacing-md);
   padding: 80px var(--spacing-xl);
   flex-direction: column;
-  align-items: center;;
+  align-items: center;
+  background-color: var(--color-background);
 }
 
 h2 {
@@ -95,6 +96,7 @@ h2 {
   align-items: center;
   justify-content: center;
   max-width: 1600px;
+  width: 100%;
 }
 
 .contenedor-carrusel {
@@ -193,12 +195,6 @@ h2 {
   background-color: var(--color-primary);
 }
 
-@media (max-width: 768px) {
-  .producto-card {
-    width: 50%;
-  }
-}
-
 /* Fin sección productos destacados */
 /* Sección de banners */
 
@@ -207,6 +203,7 @@ h2 {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  background-color: var(--color-background);
 }
 
 .contenedor-banners {
@@ -268,3 +265,165 @@ h2 {
 }
 
 /* Fin sección de banners */
+/* Sección de nuestro cafe */
+.nuestro-cafe {
+  padding: 4rem 2rem;
+  background-color: var(--color-background-2);
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.nuestro-cafe-encabezado h4 {
+  color: #b58e6f;
+  font-weight: 600;
+  margin-bottom: 0.2rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.nuestro-cafe-encabezado h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.nuestro-cafe-encabezado hr {
+  width: 60px;
+  margin: 1rem auto 2rem;
+  border: none;
+  border-top: 2px solid #b58e6f;
+}
+
+.nuestro-cafe-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  align-items: start;
+  max-width: 1600px;
+  margin: auto;
+}
+
+.lado {
+  flex: 1 1 250px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.izquierdo {
+  text-align: right;
+}
+
+.derecho {
+  text-align: left;
+}
+
+.variedad h3 {
+  color: #c18b62;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+}
+
+.variedad p {
+  color: #444;
+  font-size: 0.95rem;
+  line-height: 1.4;
+  text-wrap: balance;
+}
+
+.imagen-cafe {
+  flex: 1 1 600px;
+  text-align: center;
+}
+
+.imagen-cafe img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+/* Fin sección de nuestro cafe */
+/* Sección de cta */
+
+.cta-sucursales {
+  background-image: url('../img/footer-bckgd.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  padding: 8rem 2rem;
+  text-align: center;
+  color: #fff;
+  min-height: 600px;
+  display: flex;
+  align-items: center;
+}
+
+.cta-sucursales::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.123); /* Oscurece la imagen */
+  z-index: 1;
+}
+
+.cta-sucursales .contenido {
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.cta-sucursales p {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.cta-sucursales h2 {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #d2a374;
+  margin: 0.5rem 0;
+}
+
+.cta-sucursales .subtexto {
+  font-size: 1rem;
+  color: #fff;
+  margin-bottom: 2rem;
+}
+
+.btn-cta {
+  display: inline-block;
+  padding: 0.8rem 2rem;
+  border: 2px solid #fff;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-cta:hover {
+  background-color: #fff;
+  color: #000;
+}
+/* Fin sección de cta */
+
+/* media queries */
+
+@media (max-width: 768px) {
+/* productos destacados */
+  .producto-card {
+    width: 50%;
+  }
+/* banners */
+.contenedor-banners {
+      flex-direction: column;
+}
+/* nuestro-cafe */
+.izquierdo{
+      text-align: start;
+}
+}
