@@ -50,3 +50,30 @@ izquierda.addEventListener('click', () => moverCarrusel(-1));
 // Inicializamos estado al cargar
 actualizarFlechas();
 actualizarPuntoDesdeScroll();
+
+
+  let currentSlide = 0;
+  const slides = document.querySelectorAll('.hero-slide');
+  const dots = document.querySelectorAll('.dot');
+
+  function showSlide(index) {
+    slides.forEach((slide, i) => {
+      slide.classList.toggle('active', i === index);
+      dots[i]?.classList.toggle('active', i === index);
+    });
+    currentSlide = index;
+  }
+
+  function nextSlide() {
+    showSlide((currentSlide + 1) % slides.length);
+  }
+
+  function prevSlide() {
+    showSlide((currentSlide - 1 + slides.length) % slides.length);
+  }
+
+  document.querySelector('.next').addEventListener('click', nextSlide);
+  document.querySelector('.prev').addEventListener('click', prevSlide);
+  dots.forEach((dot, i) => dot.addEventListener('click', () => showSlide(i)));
+
+  setInterval(nextSlide, 10000); // Auto-slide cada 5 segundos

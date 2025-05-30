@@ -1,198 +1,354 @@
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/index.css">
-    <link rel="stylesheet" href="./css/menu-tienda-styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./css/menu-tienda-styles.css" />
     <title>Home - Tienda Café</title>
-</head>
-<body>
-        <div id="nav"></div>
+  </head>
+  <body>
+    <div id="nav"></div>
     <main>
-        <section class="hero">
-            <div class="hero-overlay">
-                <div class="hero-content">
-                <div class="text-container">
-                    <p class="subtitle">Tu café preferido</p>
-                    <h1>SIEMPRE CERCA</h1>
-                    <p class="description">
-                        Blends, varietales, cafés del mundo.<br>
-                        Encontrá tu Tienda más cercana y tentate con nuestros sabores.
-                    </p>
-                    <a href="/locales/" class="btn">ENCONTRANOS</a>
-                </div>
-                </div>
+      <section class="hero-slider">
+        <div
+          class="hero-slide active"
+          style="background-image: url('img/carrusel/sidebar_cafe01.jpg')"
+        >
+          <div class="hero-overlay">
+            <div class="hero-content-index">
+              <div class="text-container">
+                <p class="subtitle">Tu café preferido</p>
+                <h1>SIEMPRE CERCA</h1>
+                <p class="description">
+                  Blends, varietales, cafés del mundo.<br />Encontrá tu Tienda
+                  más cercana y tentate con nuestros sabores.
+                </p>
+                <a href="/locales/" class="btn-cta">ENCONTRANOS</a>
+              </div>
             </div>
-        </section>
+          </div>
+        </div>
 
-        <section class="productos-destacados">
-            <h2>NUESTROS PRODUCTOS</h2>
-            <hr class="separador">
-            <div class="carrusel-wrapper">
-            <button class="flecha izquierda disabled">&#10094;</button>
-
-                <div class="contenedor-carrusel">
-                <!-- Repetir según producto -->
-                    <div class="producto-card">
-                        <div class="imagen-contenedor">
-                            <img src="./img/productos/Productos_cafe_packs_BRASIL_frente.jpg" alt="Café Brasil">
-                            <img src="img/productos/Productos_cafe_packs_BRASIL_frente_prueba.jpg" class="img-hover"            alt="Producto café hover">
-                        </div>
-                        <h3>Café Brasil</h3>
-                    </div>
-                <!-- ...otros productos -->
-                    <div class="producto-card">
-                        <div class="imagen-contenedor">
-                            <img src="./img/productos/Productos_cafe_packs_BARISTA_frente.jpg" alt="Café BARISTA">
-                            <img src="img/productos/Productos_cafe_packs_BARISTA_frente_prueba (1).jpg" class="img-hover" alt="Producto café hover">
-                        </div>
-                        <h3>Café Barista</h3>
-                    </div>
-                    <div class="producto-card">
-                        <div class="imagen-contenedor">
-                            <img src="./img/productos/Productos_cafe_packs_MINKA_frente.jpg" alt="Café MINKA">
-                            <img src="img/productos/Productos_cafe_packs_minka_frente_prueba (1).jpg" class="img-hover" alt="Producto café hover">
-                        </div>
-                        <h3>Café Minka</h3>
-                    </div>
-                    <div class="producto-card">
-                        <div class="imagen-contenedor">
-                            <img src="./img/productos/Productos_cafe_packs_SCEGLIERE_frente.jpg" alt="Café SCEGLIERE">
-                            <img src="img/productos/Productos_cafe_packs_SCEGLIERE2_frente_prueba (1).jpg" class="img-hover" alt="Producto café hover">
-                        </div>
-                        <h3>Café Scegliere</h3>
-                    </div>
-                    <div class="producto-card">
-                        <div class="imagen-contenedor">
-                            <img src="./img/productos/Productos_cafe_packs_descaf_frente.jpg" alt="Café Descafeinado">
-                            <img src="img/productos/Productos_cafe_packs_DESCAFEINADO_frente_prueba.jpg" class="img-hover" alt="Producto café hover">
-                        </div>
-                        <h3>Café Clásico</h3>
-                    </div>
-                    <div class="producto-card">
-                        <div class="imagen-contenedor">
-                            <img src="./img/productos/capsulas_taza_scegliere.jpg" alt="Café Scegliere">
-                            <img src="img/productos/capsulas_intensidad (1).jpg" class="img-hover" alt="Producto café hover">
-                        </div>
-                        <h3>Café Scegliere</h3>
-                    </div>
-                    <div class="producto-card">
-                        <div class="imagen-contenedor">
-                            <img src="./img/productos/capsulas_taza_minka.jpg" alt="Café Minka">
-                            <img src="img/productos/capsulas_intensidad (1).jpg" class="img-hover" alt="Producto café hover">
-                        </div>
-                        <h3>Café Minka</h3>
-                    </div>
-                    <div class="producto-card">
-                        <div class="imagen-contenedor">
-                            <img src="./img/productos/capsulas_taza_colombia.jpg" alt="Café Colombia">
-                            <img src="img/productos/capsulas_intensidad (1).jpg" class="img-hover" alt="Producto café hover">
-                        </div>
-                        <h3>Café Colombia</h3>
-                    </div>
-                    <div class="producto-card">
-                        <div class="imagen-contenedor">
-                            <img src="./img/productos/capsulas_taza_barista.jpg" alt="Café Barista">
-                            <img src="img/productos/capsulas_intensidad (1).jpg" class="img-hover" alt="Producto café hover">
-                        </div>
-                        <h3>Café Barista</h3>
-                    </div>
-                </div>
-
-                <button class="flecha derecha">&#10095;</button>
+        <div
+          class="hero-slide"
+          style="background-image: url('img/carrusel/sidebar_capsulas04_v2.jpg')"
+        >
+          <div class="hero-overlay">
+            <div class="hero-content-index">
+              <div class="text-container">
+                <p class="subtitle">Nuevo sabor</p>
+                <h1>INTENSO Y AROMÁTICO</h1>
+                <p class="description">
+                  Probá nuestros nuevos blends con granos seleccionados.<br />Un
+                  sabor que despierta tus sentidos.
+                </p>
+                <a href="/menu/" class="btn-cta">VER MENÚ</a>
+              </div>
             </div>
+          </div>
+        </div>
 
-            <div class="indicadores">
-                <span class="punto activo"></span>
-                <span class="punto"></span>
-                <span class="punto"></span>
-                <span class="punto"></span>
-                <span class="punto"></span>
-                <span class="punto"></span>
-             </div>
-        </section>
-
-        <section class="banners">
-            <div class="contenedor-banners">
-    
-                <div class="banner" style="background-image: url('img/banners/bannerpromo_cafe_02_v2.jpg')">
-                    <div class="contenido-banner">
-                        <p>Aprendé a hacer tu café como un experto</p>
-                        <h2>SECRETOS DEL BARISTA</h2>
-                        <a href="#" class="boton-banner">VER</a>
-                    </div>
-                </div>
-
-                <div class="banner" style="background-image: url('img/banners/TIENDA-042400313-1-scaled-760x420.jpg')">
-                    <div class="contenido-banner">
-                        <p>Conocé todo lo que podés encontrar en nuestros locales</p>
-                        <h2>NUESTROS PLATOS</h2>
-                        <a href="#" class="boton-banner">VER</a>
-                    </div>
-                </div>
-
+        <div
+          class="hero-slide"
+          style="background-image: url('img/carrusel/sidebar_tostadores02.jpg')"
+        >
+          <div class="hero-overlay">
+            <div class="hero-content-index">
+              <div class="text-container">
+                <p class="subtitle">Cerca tuyo</p>
+                <h1>NUEVAS TIENDAS</h1>
+                <p class="description">
+                  Estamos creciendo.<br />Conocé nuestras nuevas ubicaciones en
+                  tu ciudad.
+                </p>
+                <a href="/franquicias/" class="btn-cta">DESCUBRILAS</a>
+              </div>
             </div>
-        </section>
+          </div>
+        </div>
 
-        <section class="nuestro-cafe">
-            <div class="nuestro-cafe-encabezado">
-                <h4>NUESTRO CAFÉ</h4>
-                <h2>¿CUÁL VAS A ELEGIR HOY?</h2>
-                <hr>
+        <!-- Botones de navegación -->
+        <button class="prev">&#10094;</button>
+        <button class="next">&#10095;</button>
+
+        <!-- Puntos opcionales -->
+        <div class="dots">
+          <span class="dot active"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+      </section>
+
+      <section class="productos-destacados">
+        <h2>NUESTROS PRODUCTOS</h2>
+        <hr class="separador" />
+        <div class="carrusel-wrapper">
+          <button class="flecha izquierda disabled">&#10094;</button>
+
+          <div class="contenedor-carrusel">
+            <!-- Repetir según producto -->
+            <div class="producto-card">
+              <div class="imagen-contenedor">
+                <img
+                  src="./img/productos/Productos_cafe_packs_BRASIL_frente.jpg"
+                  alt="Café Brasil"
+                />
+                <img
+                  src="img/productos/Productos_cafe_packs_BRASIL_frente_prueba.jpg"
+                  class="img-hover"
+                  alt="Producto café hover"
+                />
+              </div>
+              <h3>Café Brasil</h3>
             </div>
-
-            <div class="nuestro-cafe-grid">
-                <div class="lado izquierdo">
-                    <div class="variedad">
-                        <h3>BARISTA</h3>
-                        <p>Nuestro tradicional house blend, el hijo prodigio de la casa. Granos provenientes de Brasil, nos permiten obtener este cafe pleno, de cuerpo medio, sin acidez ni amargor. Si lo vas a tomar en tu casa, te vas a sentir bien cerca de TIENDA.</p>
-                    </div>
-                    <div class="variedad">
-                        <h3>SCEGLIERE</h3>
-                        <p>Una combinación única, lograda por la combinación de tres varietales: Brasil Santos Mogiana, Colombia Supremo y Moka. Un café de cuerpo medio, levemente acidulado y estructuralmente complejo.</p>
-                    </div>
-                    <div class="variedad">
-                        <h3>MINKA</h3>
-                        <p>Este blend nos regala un café de gran cuerpo, con un sabor especiado. Si sos amante del café intenso, te vas a enamorar de nuestro Minka.</p>
-                    </div>
-                </div>
-
-                <div class="imagen-cafe">
-                    <picture>
-                        <source srcset="./img/packhome_01.jpg" type="image/jpeg">
-                        <img src="./img/packhome_01.jpg" alt="Variedades de Café" loading="lazy">
-                    </picture>
-                </div>
-
-                <div class="lado derecho">
-                    <div class="variedad">
-                        <h3>COLOMBIA</h3>
-                        <p>Nuestro varietal clásico. Adentrate en las regiones colombianas con este café de cuerpo suave, gusto frutado, aroma floral y una delicada acidez. Inconfundible.</p>
-                    </div>
-                    <div class="variedad">
-                        <h3>DESCAFEINADO</h3>
-                        <p>Si querés disfrutar un exquisito café, pero reducir tu dosis diaria de cafeína, este es tu blend! Café originario de Colombia, suave, de cuerpo medio y un aroma que te invita a probarlo. Recomendado para aquellas personas sensibles a la cafeína.</p>
-                    </div>
-                    <div class="variedad">
-                        <h3>BRASIL</h3>
-                        <p>Un café de cuerpo suave, y baja acidez hacen de BRASIL el ideal para tus preparaciones de café filtrado.</p>
-                    </div>
-                </div>
+            <!-- ...otros productos -->
+            <div class="producto-card">
+              <div class="imagen-contenedor">
+                <img
+                  src="./img/productos/Productos_cafe_packs_BARISTA_frente.jpg"
+                  alt="Café BARISTA"
+                />
+                <img
+                  src="img/productos/Productos_cafe_packs_BARISTA_frente_prueba (1).jpg"
+                  class="img-hover"
+                  alt="Producto café hover"
+                />
+              </div>
+              <h3>Café Barista</h3>
             </div>
-        </section>
-
-        <section class="cta-sucursales">
-            <div class="contenido">
-                <p>SIEMPRE HAY UN</p>
-                <h2>TIENDA CERCA TUYO</h2>
-                <p class="subtexto">Encontrá nuestra sucursal más cercana.</p>
-                <a href="sucursales.html" class="btn-cta">INGRESAR</a>
+            <div class="producto-card">
+              <div class="imagen-contenedor">
+                <img
+                  src="./img/productos/Productos_cafe_packs_MINKA_frente.jpg"
+                  alt="Café MINKA"
+                />
+                <img
+                  src="img/productos/Productos_cafe_packs_minka_frente_prueba (1).jpg"
+                  class="img-hover"
+                  alt="Producto café hover"
+                />
+              </div>
+              <h3>Café Minka</h3>
             </div>
-        </section>
+            <div class="producto-card">
+              <div class="imagen-contenedor">
+                <img
+                  src="./img/productos/Productos_cafe_packs_SCEGLIERE_frente.jpg"
+                  alt="Café SCEGLIERE"
+                />
+                <img
+                  src="img/productos/Productos_cafe_packs_SCEGLIERE2_frente_prueba (1).jpg"
+                  class="img-hover"
+                  alt="Producto café hover"
+                />
+              </div>
+              <h3>Café Scegliere</h3>
+            </div>
+            <div class="producto-card">
+              <div class="imagen-contenedor">
+                <img
+                  src="./img/productos/Productos_cafe_packs_descaf_frente.jpg"
+                  alt="Café Descafeinado"
+                />
+                <img
+                  src="img/productos/Productos_cafe_packs_DESCAFEINADO_frente_prueba.jpg"
+                  class="img-hover"
+                  alt="Producto café hover"
+                />
+              </div>
+              <h3>Café Clásico</h3>
+            </div>
+            <div class="producto-card">
+              <div class="imagen-contenedor">
+                <img
+                  src="./img/productos/capsulas_taza_scegliere.jpg"
+                  alt="Café Scegliere"
+                />
+                <img
+                  src="img/productos/capsulas_intensidad (1).jpg"
+                  class="img-hover"
+                  alt="Producto café hover"
+                />
+              </div>
+              <h3>Café Scegliere</h3>
+            </div>
+            <div class="producto-card">
+              <div class="imagen-contenedor">
+                <img
+                  src="./img/productos/capsulas_taza_minka.jpg"
+                  alt="Café Minka"
+                />
+                <img
+                  src="img/productos/capsulas_intensidad (1).jpg"
+                  class="img-hover"
+                  alt="Producto café hover"
+                />
+              </div>
+              <h3>Café Minka</h3>
+            </div>
+            <div class="producto-card">
+              <div class="imagen-contenedor">
+                <img
+                  src="./img/productos/capsulas_taza_colombia.jpg"
+                  alt="Café Colombia"
+                />
+                <img
+                  src="img/productos/capsulas_intensidad (1).jpg"
+                  class="img-hover"
+                  alt="Producto café hover"
+                />
+              </div>
+              <h3>Café Colombia</h3>
+            </div>
+            <div class="producto-card">
+              <div class="imagen-contenedor">
+                <img
+                  src="./img/productos/capsulas_taza_barista.jpg"
+                  alt="Café Barista"
+                />
+                <img
+                  src="img/productos/capsulas_intensidad (1).jpg"
+                  class="img-hover"
+                  alt="Producto café hover"
+                />
+              </div>
+              <h3>Café Barista</h3>
+            </div>
+          </div>
+
+          <button class="flecha derecha">&#10095;</button>
+        </div>
+
+        <div class="indicadores">
+          <span class="punto activo"></span>
+          <span class="punto"></span>
+          <span class="punto"></span>
+          <span class="punto"></span>
+          <span class="punto"></span>
+          <span class="punto"></span>
+        </div>
+      </section>
+
+      <section class="banners">
+        <div class="contenedor-banners">
+          <div
+            class="banner"
+            style="
+              background-image: url('img/banners/bannerpromo_cafe_02_v2.jpg');
+            "
+          >
+            <div class="contenido-banner">
+              <p>Aprendé a hacer tu café como un experto</p>
+              <h2>SECRETOS DEL BARISTA</h2>
+              <a href="#" class="boton-banner">VER</a>
+            </div>
+          </div>
+
+          <div
+            class="banner"
+            style="
+              background-image: url('img/banners/TIENDA-042400313-1-scaled-760x420.jpg');
+            "
+          >
+            <div class="contenido-banner">
+              <p>Conocé todo lo que podés encontrar en nuestros locales</p>
+              <h2>NUESTROS PLATOS</h2>
+              <a href="#" class="boton-banner">VER</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="nuestro-cafe">
+        <div class="nuestro-cafe-encabezado">
+          <h4>NUESTRO CAFÉ</h4>
+          <h2>¿CUÁL VAS A ELEGIR HOY?</h2>
+          <hr />
+        </div>
+
+        <div class="nuestro-cafe-grid">
+          <div class="lado izquierdo">
+            <div class="variedad">
+              <h3>BARISTA</h3>
+              <p>
+                Nuestro tradicional house blend, el hijo prodigio de la casa.
+                Granos provenientes de Brasil, nos permiten obtener este cafe
+                pleno, de cuerpo medio, sin acidez ni amargor. Si lo vas a tomar
+                en tu casa, te vas a sentir bien cerca de TIENDA.
+              </p>
+            </div>
+            <div class="variedad">
+              <h3>SCEGLIERE</h3>
+              <p>
+                Una combinación única, lograda por la combinación de tres
+                varietales: Brasil Santos Mogiana, Colombia Supremo y Moka. Un
+                café de cuerpo medio, levemente acidulado y estructuralmente
+                complejo.
+              </p>
+            </div>
+            <div class="variedad">
+              <h3>MINKA</h3>
+              <p>
+                Este blend nos regala un café de gran cuerpo, con un sabor
+                especiado. Si sos amante del café intenso, te vas a enamorar de
+                nuestro Minka.
+              </p>
+            </div>
+          </div>
+
+          <div class="imagen-cafe">
+            <picture>
+              <source srcset="./img/packhome_01.jpg" type="image/jpeg" />
+              <img
+                src="./img/packhome_01.jpg"
+                alt="Variedades de Café"
+                loading="lazy"
+              />
+            </picture>
+          </div>
+
+          <div class="lado derecho">
+            <div class="variedad">
+              <h3>COLOMBIA</h3>
+              <p>
+                Nuestro varietal clásico. Adentrate en las regiones colombianas
+                con este café de cuerpo suave, gusto frutado, aroma floral y una
+                delicada acidez. Inconfundible.
+              </p>
+            </div>
+            <div class="variedad">
+              <h3>DESCAFEINADO</h3>
+              <p>
+                Si querés disfrutar un exquisito café, pero reducir tu dosis
+                diaria de cafeína, este es tu blend! Café originario de
+                Colombia, suave, de cuerpo medio y un aroma que te invita a
+                probarlo. Recomendado para aquellas personas sensibles a la
+                cafeína.
+              </p>
+            </div>
+            <div class="variedad">
+              <h3>BRASIL</h3>
+              <p>
+                Un café de cuerpo suave, y baja acidez hacen de BRASIL el ideal
+                para tus preparaciones de café filtrado.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="cta-sucursales">
+        <div class="contenido">
+          <p>SIEMPRE HAY UN</p>
+          <h2>TIENDA CERCA TUYO</h2>
+          <p class="subtexto">Encontrá nuestra sucursal más cercana.</p>
+          <a href="sucursales.html" class="btn-cta">INGRESAR</a>
+        </div>
+      </section>
     </main>
     <div id="footer"></div>
     <script src="./js/main.js"></script>
     <script src="./js/index.js"></script>
-</body>
+  </body>
 </html>
