@@ -125,3 +125,8 @@ button:hover {
 }
 
 ```
+# 📷 Capturas
+
+![Página de inicio](img/capturas/Captura%20de%20pantalla%202025-05-30%20114511.png)
+
+![Slider de productos destacados](img/capturas/Captura%20de%20pantalla%202025-05-30%20114527.png)
