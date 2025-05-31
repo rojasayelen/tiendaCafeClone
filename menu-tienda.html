@@ -5,8 +5,11 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Nuestro Menú - Tienda de Café</title>
-        <link rel="stylesheet" href="css/menu-tienda-styles.css">
+        <link rel="stylesheet" href="css/menu-tienda.css">
+        <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/index.css">
+        <link rel="stylesheet" href="css/nav.css">
+        <link rel="stylesheet" href="css/footer.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link
@@ -16,19 +19,17 @@
 
     <body>
 
-        <header>
-
-
-            <div class="header-overlay"></div>
-            <div class="hero-content">
-                <h1 class="hero-title">SOMOS CAFÉ</h1>
-                <h2 class="main-titles">
-                    <span>Y MUCHO</span>
-                    <span>MAS</span>
+        <header id="menu-header">
+            <div class="menu-header-overlay"></div>
+            <div id="menu-hero-content">
+                <h1 class="menu-hero-title">SOMOS CAFÉ</h1>
+                <h2 class="menu-main-titles">
+                    <span class="menu-span">Y MUCHO</span>
+                    <span class="menu-span">MAS</span>
                 </h2>
-                <p class="hero-subtitle">
-                    <span class="subtitle-span">Vení a disfrutar nuestros platos, perfectos</span>
-                    <span class="subtitle-span">para cada momento de tu día.</span>
+                <p class="menu-hero-subtitle">
+                    <span class="menu-subtitle-span">Vení a disfrutar nuestros platos, perfectos</span>
+                    <span class="menu-subtitle-span">para cada momento de tu día.</span>
                 </p>
             </div>
 
@@ -38,33 +39,33 @@
             <section class="container-menu">
                 <section class="masonry">
                     <div class="masonry-item">
-                        <img src="img/dulzuras_01.jpg" alt="Dulzura 01">
+                        <img src="img/menu/dulzuras_01.jpg" alt="Dulzura 01">
                         <div class="masonry-text-box dulzuras-box">
                             <p class="linea-gris">DEJATE TENTAR CON NUESTRAS</p>
                             <p class="linea-blanca">DULZURAS</p>
                         </div>
                     </div>
                     <div class="masonry-item">
-                        <img src="img/dulzuras_02.jpg" alt="Dulzura 02">
+                        <img src="img/menu/dulzuras_02.jpg" alt="Dulzura 02">
                     </div>
                     <div class="masonry-item">
-                        <img src="img/dulzuras_03.jpg" alt="Dulzura 03">
+                        <img src="img/menu/dulzuras_03.jpg" alt="Dulzura 03">
                     </div>
                     <div class="masonry-item">
-                        <img src="img/dulzuras_04.jpg" alt="Dulzura 04">
+                        <img src="img/menu/dulzuras_04.jpg" alt="Dulzura 04">
                     </div>
                     <div class="masonry-item">
-                        <img src="img/dulzuras_05.jpg" alt="Dulzura 05">
+                        <img src="img/menu/dulzuras_05.jpg" alt="Dulzura 05">
                     </div>
                     <div class="masonry-item">
-                        <img src="img/dulzuras_06.jpg" alt="Dulzura 06">
+                        <img src="img/menu/dulzuras_06.jpg" alt="Dulzura 06">
                     </div>
                 </section>
 
                 <section class="container-menu">
                     <div class="masonry">
                         <div class="masonry-item">
-                            <img src="img/platos_01.jpg" alt="Sandwich">
+                            <img src="img/menu/platos_01.jpg" alt="Sandwich">
                             <div class="masonry-text-box platos-box">
                                 <p class="linea-gris platos-1st-line">EN CADA MOMENTO DE TU DÍA</p>
                                 <p class="linea-blanca platos-2nd-line">PLATOS</p>
@@ -72,7 +73,7 @@
                             </div>
                         </div>
                         <div class="masonry-item">
-                            <img src="img/platos_02.jpg" alt="Sandwich">
+                            <img src="img/menu/platos_02.jpg" alt="Sandwich">
                             <div class="masonry-text-box platos-box">
                                 <p class="linea-gris platos-1st-line">EN CADA MOMENTO DE TU DÍA</p>
                                 <p class="linea-blanca platos-2nd-line">PLATOS</p>
@@ -80,38 +81,38 @@
                             </div>
                         </div>
                         <div class="masonry-item">
-                            <img src="img/platos_03.jpg" alt="Sandwich">
+                            <img src="img/menu/platos_03.jpg" alt="Sandwich">
                         </div>
                         <div class="masonry-item">
-                            <img src="img/platos_04.jpg" alt="Sandwich">
+                            <img src="img/menu/platos_04.jpg" alt="Sandwich">
                         </div>
                         <div class="masonry-item">
-                            <img src="img/platos_05.jpg" alt="Sandwich">
+                            <img src="img/menu/platos_05.jpg" alt="Sandwich">
                         </div>
                         <div class="masonry-item">
-                            <img src="img/platos_06.jpg" alt="Sandwich">
+                            <img src="img/menu/platos_06.jpg" alt="Sandwich">
                         </div>
                     </div>
                 </section>
                 <section class="menu">
                     <h2 id="menu-title">CONOCÉ TODAS NUESTRAS OPCIONES</h2>
                     <a href=menu.html>
-                        <img src="img/menu-1.jpg" alt="Acceso al menu">
+                        <img src="img/menu/menu-1.jpg" alt="Acceso al menu">
                     </a>
                 </section>
 
-            <section class="cta-sucursales">
-            <div class="contenido">
-                <p>SIEMPRE HAY UN</p>
-                <h2>TIENDA CERCA TUYO</h2>
-                <p class="subtexto">Encontrá nuestra sucursal más cercana.</p>
-                <a href="sucursales.html" class="btn-cta">INGRESAR</a>
-            </div>
-            </section>
+                <section class="cta-sucursales">
+                    <div class="contenido">
+                        <p>SIEMPRE HAY UN</p>
+                        <h2>TIENDA CERCA TUYO</h2>
+                        <p class="subtexto">Encontrá nuestra sucursal más cercana.</p>
+                        <a href="sucursales.html" class="btn-cta">INGRESAR</a>
+                    </div>
+                </section>
         </main>
 
         <div id="footer"> </div>
-        
+
         <script src="./js/main.js"></script>
         <script src="./js/index.js"></script>
 
