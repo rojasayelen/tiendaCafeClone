@@ -1,0 +1,35 @@
+.contenedor-grid-tienda {
+  display: flex;
+  justify-content: center;
+  padding: 4rem;
+}
+
+.grid-contenedor {
+  display: flex;
+  gap: 1.5rem;
+  max-width: 1200px;
+  margin: auto;
+  flex-wrap: wrap;
+}
+
+.grid-contenedor .producto-card {
+  width: 100%;
+  flex: 1 1 25%;
+}
+
+/* Tablet horizontal */
+@media (max-width: 1080px) {
+}
+/* Tablet vertical */
+@media (max-width: 768px) {
+  .grid-contenedor .producto-card {
+    width: 100%;
+    flex: 1 1 50%;
+  }
+}
+/* Mobil 1 */
+@media (max-width: 480px) {
+}
+/* Mobil 2 */
+@media (max-width: 375px) {
+}
