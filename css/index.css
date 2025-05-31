@@ -408,6 +408,8 @@ h2 {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  background-position: fixed;
+  background-attachment: fixed;
   position: relative;
   padding: 8rem 2rem;
   text-align: center;
