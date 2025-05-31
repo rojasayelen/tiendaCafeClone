@@ -16,18 +16,63 @@
 
 .tutoriales-lista {
 display: grid;
-grid-template-columns: repeat(2, 1fr);
-grid-template-rows: repeat(3, 1fr);
-grid-column-gap: 0px;
-grid-row-gap: 0px;
+/* grid-template-columns: repeat(2, 1fr); */
+grid-template-columns: 35% 35%;
+justify-content: center;
+gap: 20px;
+padding: 20px 0;
 }
 
-.div1 { grid-area: 2 / 2 / 3 / 3; }
-.div2 { grid-area: 2 / 4 / 3 / 5; }
-.div3 { grid-area: 3 / 2 / 4 / 3; }
-.div4 { grid-area: 3 / 4 / 4 / 5; }
-.div5 { grid-area: 4 / 2 / 5 / 3; }
-.div6 { grid-area: 4 / 4 / 5 / 5; }
+.tutorial-item{
+    height: 300px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    position: relative; 
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white; 
+    border-radius: 8px; 
+    overflow: hidden; 
+}
+
+.tutorial-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4); /* Negro con 40% de opacidad */
+    transition: background-color 0.3s ease; /* Transición suave para el hover */
+}
+
+.tutorial-item:hover::before {
+    background-color: rgba(0, 0, 0, 0.6); 
+}
+
+.tutorial-item .content {
+    position: relative; /* o z-index: 1; */
+}
+.tutorial-item .tipo-cafe {
+    margin: 0;
+    font-size: 2em; /* Tamaño grande para el título */
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.tutorial-item .ver-pasos {
+    display: inline-block;
+    margin-top: 8px;
+    font-size: 0.9em;
+    font-weight: 600;
+    letter-spacing: 1px;
+    border-bottom: 2px solid white;
+    padding-bottom: 2px;
+}
 
 .div1{
     background-image: url(../img/1\ -\ Tienda-de-Café-tutorial_119-scaled-460x306.jpg);
@@ -35,7 +80,6 @@ grid-row-gap: 0px;
 .div2{
     background-image: url(../img/2-\ Cafeterra.jpg);
 }   
-
 .div3{
     background-image: url(../img/3\ -\ chemex03_306x460.jpg);
 }
@@ -49,7 +93,10 @@ grid-row-gap: 0px;
     background-image: url(../img/6\ -\ Tienda-de-Café-tutorial_281-scaled-460x306.jpg);
 }
 
-.vc-column{
-    padding: 40px;;
+/* --- Diseño Responsivo --- */
+@media (max-width: 768px) {
+    .tutoriales-lista {
+        /* En pantallas chicas, pasamos a 1 sola columna */
+        grid-template-columns: 1fr;
+    }
 }
-
