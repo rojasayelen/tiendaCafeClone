@@ -1,36 +1,61 @@
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/trabaja-en-tdc.css">
-    <title>Trabajá en TDC</title>
-</head>
-<body>
-    <section class="intro-trabaja">
-    <h2>SUMATE A NUESTRO EQUIPO</h2>
-    <h1>TRABAJÁ EN TDC</h1>
-    <p>Si querés formar parte de Tienda de Café envianos tus datos y adjunta tu CV</p>
-</section>
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./css/style.css">
+        <link rel="stylesheet" href="./css/trabaja-en-tdc.css">
+        <link rel="stylesheet" href="css/menu-tienda-styles.css">
+        <title>Trabajá en TDC</title>
+    </head>
+    <body>
+        <div id="nav"></div>
+        <main class="contenedor-principal">
+            <section class="intro-trabaja">
+                <h1 class="pre-titulo">SUMATE A NUESTRO EQUIPO</h1>
+                <h2 class="titulo">TRABAJÁ EN TDC</h2>
+                <hr class="separador" />
+                <p class="descripcion">Si querés formar parte de Tienda de Café envianos tus datos y adjunta tu CV</p>
+            </section>
 
-<form method="post">
-    <label>Nombre</label>
-    <label>Apellido</label>
-    <label>E-mail</label>
-    <label>Teléfono</label>
-    <label>¿Cuál es tu puesto de trabajo?</label>
-    <label>¿Cuál es tu sucursal de preferencia?</label>
-    <label>
-        Adjuntar CV
-        <span class="file-input">
-            <input type="file" name="cv" accept=".pdf,.doc,.docx" required>
-            <span class="file-name">Choose File</span>
-    </label>
-    <label> Mensaje
-        <span class="textarea">
-            <textarea name="message" rows="10" required></textarea>
-    </label>
-</form>
-</body>
+            <form>
+                <div class="fila-form">
+                    <div class="campo">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" id="nombre">
+                    </div>
+                    <div class="campo">
+                        <label for="apellido">Apellido</label>
+                        <input type="text" id="apellido">
+                    </div>
+                </div>
+
+                <div class="fila-form">
+                    <div class="campo">
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email">
+                    </div>
+                    <div class="campo">
+                        <label for="telefono">Teléfono</label>
+                        <input type="tel" id="telefono">
+                    </div>
+                </div>
+
+                <label>¿Cuál es tu puesto de trabajo?</label>
+                    <input type="text" id="puesto">
+                <label>¿Cuál es tu sucursal de preferencia?</label>
+                    <input type="text" id="sucursal">
+                <label for="cv">Adjuntar CV</label>
+                <input type="file" id="cv">
+
+                <label for="mensaje">Mensaje</label>
+                <textarea id="mensaje" rows="6"></textarea>
+
+                <button class="boton-enviar" type="button">Enviar</button>
+            </form>
+        </main>
+        <div id="footer"> </div>
+        <script src="./js/main.js"></script>
+        <script src="./js/index.js"></script>
+    </body>
 </html>

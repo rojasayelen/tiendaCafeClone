@@ -1,0 +1,500 @@
+/* ================================
+   Sección hero
+================================ */
+
+.hero-content-index {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 2rem;
+  width: 100%;
+}
+
+.text-container {
+  max-width: 500px;
+}
+
+.subtitle {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: var(--color-white);
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  margin: 0 0 1rem;
+  color: var(--color-white);
+}
+
+.description {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  color: var(--color-white);
+}
+
+.hero-slider {
+  position: relative;
+  height: 860px;
+  overflow: hidden;
+}
+
+.hero-slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.hero-slide.active {
+  opacity: 1;
+  z-index: 1;
+}
+
+.hero-overlay {
+  background: rgba(0, 0, 0, 0.3);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.prev,
+.next {
+  position: absolute;
+  top: 50%;
+  font-size: 2rem;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.3);
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  z-index: 2;
+  transform: translateY(-50%);
+}
+
+.prev {
+  left: 10px;
+}
+.next {
+  right: 10px;
+}
+
+.dots {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  text-align: center;
+  z-index: 2;
+}
+
+.dot {
+  height: 10px;
+  width: 10px;
+  margin: 0 4px;
+  background-color: white;
+  border-radius: 50%;
+  display: inline-block;
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.dot.active {
+  opacity: 1;
+}
+/* Fin sección hero */
+
+/* ================================
+   Seccion productos destacados
+================================ */
+.productos-destacados {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  gap: var(--spacing-md);
+  padding: 80px var(--spacing-xl);
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--color-background);
+}
+
+h2 {
+  font-size: 36px;
+  margin-bottom: var(--spacing-lg);
+  text-align: center;
+}
+
+.separador {
+  border: none;
+  height: 2px;
+  background-color: var(--color-secondary); /* o #000, #ccc, etc. */
+  margin: 1rem 0; /* espacio arriba y abajo */
+  width: 120px; /* o un valor como 80% */
+}
+
+.carrusel-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 1600px;
+  width: 100%;
+}
+
+.contenedor-carrusel {
+  display: flex;
+  overflow-x: hidden;
+  scroll-snap-type: x mandatory;
+  gap: var(--spacing-md);
+  padding: 0 var(--spacing-lg); /* solo padding lateral */
+  max-width: 90%; /* ancho máximo del carrusel */
+}
+
+.producto-card {
+  background-color: var(--color-white);
+  width: 25%; /* ancho fijo recomendable */
+  flex: 0 0 auto; /* evitar que se estire */
+  text-align: center;
+  color: var(--color-text); /* aseguramos el color del texto */
+  scroll-snap-align: start;
+}
+
+.producto-card img {
+  width: 100%;
+  height: auto;
+}
+
+.imagen-contenedor {
+  position: relative;
+  width: 100%;
+}
+
+.img-normal,
+.img-hover {
+  width: 100%;
+  height: auto;
+  border-radius: var(--border-radius-md);
+  transition: opacity 0.3s ease;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.img-hover {
+  opacity: 0;
+}
+
+.producto-card:hover .img-hover {
+  opacity: 1;
+}
+
+.producto-card:hover .img-normal {
+  opacity: 0;
+}
+
+.flecha {
+  background: none;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  color: var(--color-black);
+  padding: 0 1rem;
+  z-index: 1;
+}
+
+.flecha.izquierda {
+  position: absolute;
+  left: 0;
+}
+
+.flecha.derecha {
+  position: absolute;
+  right: 0;
+}
+
+.flecha.disabled {
+  opacity: 0.4;
+  pointer-events: none;
+}
+
+.indicadores {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+}
+
+.punto {
+  width: 10px;
+  height: 10px;
+  background-color: #bbb;
+  border-radius: 50%;
+  margin: 0 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.punto.activo {
+  background-color: var(--color-primary);
+}
+
+/* Fin sección productos destacados */
+
+/* ================================
+   Sección de banners
+================================ */
+
+.banners {
+  padding: var(--spacing-lg);
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: var(--color-background);
+}
+
+.contenedor-banners {
+  display: flex;
+  gap: var(--spacing-md);
+  width: 100%;
+  max-width: 1600px;
+}
+
+.banner {
+  flex: 1 1 50%;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  height: 400px;
+  display: flex;
+  align-items: flex-end;
+  border-radius: var(--border-radius-md);
+  overflow: hidden;
+}
+
+.contenido-banner {
+  background: rgba(0, 0, 0, 0.5); /* superposición oscura */
+  color: white;
+  padding: 2rem;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-end;
+}
+
+.contenido-banner p {
+  margin: 0 0 0.5rem;
+  font-size: 0.9rem;
+}
+
+.contenido-banner h2 {
+  margin: 0 0 1rem;
+  font-size: 2rem;
+  font-weight: bold;
+  color: var(--color-white);
+}
+
+.boton-banner {
+  background-color: black;
+  color: white;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 0.9rem;
+  display: inline-block;
+  transition: background-color 0.3s;
+}
+
+.boton-banner:hover {
+  background-color: var(--color-primary);
+}
+
+/* Fin sección de banners */
+
+/* ================================
+   Sección de nuestro cafe
+================================ */
+
+.nuestro-cafe {
+  padding: 4rem 2rem;
+  background-color: var(--color-background-2);
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+}
+
+.nuestro-cafe-encabezado h4 {
+  color: #b58e6f;
+  font-weight: 600;
+  margin-bottom: 0.2rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.nuestro-cafe-encabezado h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.nuestro-cafe-encabezado hr {
+  width: 60px;
+  margin: 1rem auto 2rem;
+  border: none;
+  border-top: 2px solid #b58e6f;
+}
+
+.nuestro-cafe-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  align-items: start;
+  max-width: 1600px;
+  margin: auto;
+}
+
+.lado {
+  flex: 1 1 250px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.izquierdo {
+  text-align: right;
+}
+
+.derecho {
+  text-align: left;
+}
+
+.variedad h3 {
+  color: #c18b62;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+}
+
+.variedad p {
+  color: #444;
+  font-size: 0.95rem;
+  line-height: 1.4;
+  text-wrap: balance;
+}
+
+.imagen-cafe {
+  flex: 1 1 600px;
+  text-align: center;
+}
+
+.imagen-cafe img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+/* Fin sección de nuestro cafe */
+
+/* ================================
+   Sección de cta
+================================ */
+
+.cta-sucursales {
+  background-image: url("../img/footer-bckgd.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  padding: 8rem 2rem;
+  text-align: center;
+  color: #fff;
+  min-height: 600px;
+  display: flex;
+  align-items: center;
+}
+
+.cta-sucursales::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.123); /* Oscurece la imagen */
+  z-index: 1;
+}
+
+.cta-sucursales .contenido {
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.cta-sucursales p {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.cta-sucursales h2 {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #d2a374;
+  margin: 0.5rem 0;
+}
+
+.cta-sucursales .subtexto {
+  font-size: 1rem;
+  color: #fff;
+  margin-bottom: 2rem;
+}
+
+.btn-cta {
+  display: inline-block;
+  padding: 0.8rem 2rem;
+  border: 2px solid #fff;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-cta:hover {
+  background-color: #ffffff00;
+  color: #cccccc;
+  border-color: #cccccc;
+}
+/* Fin sección de cta */
+
+
+/* ================================
+   media queries
+================================ */
+
+/* Tablet horizontal */
+@media (max-width: 1080px) {
+}
+/* Tablet vertical */
+@media (max-width: 768px) {
+  /* productos destacados */
+  .producto-card {
+    width: 50%;
+  }
+  /* banners */
+  .contenedor-banners {
+    flex-direction: column;
+  }
+  /* nuestro-cafe */
+  .izquierdo {
+    text-align: start;
+  }
+}
+/* Mobil 1 */
+@media (max-width: 480px) {
+}
+/* Mobil 2 */
+@media (max-width: 375px) {
+}
