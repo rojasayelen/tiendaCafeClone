@@ -1,44 +1,3 @@
-
-
-:root {
-/* Colores */
---color-primary: #2d2a2a;
-/* Marrón oscuro / fondo */
---color-secondary: #c7a17a;
-/* Dorado claro / acento */
---color-white: #ffffff;
---color-text: #1e1e1e;
---color-background: #fefefe;
-
-/* Tipografía */
---font-main: 'Oswald', 'Arial', 'Helvetica','sans-serif';
---font-secondary: 'Lato', 'Arial', 'Helvetica','sans-serif';
---font-size-base: 16px;
---font-size-lg: 20px;
---font-size-sm: 14px;
-
-/* Espaciado */
---spacing-xs: 4px;
---spacing-sm: 8px;
---spacing-md: 16px;
---spacing-lg: 24px;
---spacing-xl: 32px;
-
-/* Bordes */
---border-radius-sm: 4px;
---border-radius-md: 8px;
-
-/* Sombra */
---shadow-light: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body {
     font-family: var(--font-secondary);
     line-height: 1.6;
@@ -46,8 +5,7 @@ body {
     background-color: #f9fafb;
 }
 
-/* Header y Navigation */
-header {
+#menu-header {
     height: 100vh;
     background-image: url('../img/menu/fondo-inicio.jpg');
     background-size: cover;
@@ -62,7 +20,7 @@ header {
 }
 
 
-.header-overlay {
+.menu-header-overlay {
     position: absolute;
     top: 0;
     left: 0;
@@ -71,7 +29,7 @@ header {
 }
 
 
-.hero-content {
+#menu-hero-content {
     position: relative;
     z-index: 10;
     text-align: left;
@@ -81,7 +39,7 @@ header {
 }
 
 
-.hero-title {
+.menu-hero-title {
     font-family: var(--font-main);
     color: var(--color-white);
     font-size: 3rem;
@@ -91,25 +49,26 @@ header {
     line-height: 3.2rem;
 }
 
-.main-titles {
+.menu-item:hover {
     font-family: var(--font-main);
     color: var(--color-white);
     font-size: 4.2rem;
     font-weight: 700;
     margin-bottom: 0;
-   
+
     line-height: 4.4rem;
 }
 
-span {
-    display: block; 
+.menu-span {
+    font-family:var(--font-secondary);
+    display: block;
     margin-left: 4rem;
 }
 
 /*.subtitle-span {
     line-height:1rem ;
 }*/
-.hero-subtitle {
+.menu-hero-subtitle {
     font-family: var(--font-secondary);
     color: var(--color-white);
     font-weight: 400;
@@ -134,7 +93,7 @@ span {
     column-count: 2;
     column-gap: 1rem;
     margin: 2rem auto;
-    margin-bottom: 0;   
+    margin-bottom: 0;
 }
 
 
@@ -167,8 +126,9 @@ span {
     bottom: 0.6rem;
     left: 0.6rem;
 }
+
 .linea-gris {
-    font-family: var(--font-secondary); 
+    font-family: var(--font-secondary);
     font-weight: 700;
     color: var(--color-text);
     background-color: var(--color-white);
@@ -183,18 +143,18 @@ span {
     font-weight: 800;
     color: white;
     margin: 0;
-   
+
 }
 
-.platos-box{
+.platos-box {
     top: 0.6rem;
     right: 0.6rem;
     text-align: right;
-    }
-    
-.platos-2nd-line{
-   line-height: 2.7rem;
-   justify-items: right;
+}
+
+.platos-2nd-line {
+    line-height: 2.7rem;
+    justify-items: right;
 }
 
 /*-- Fin fotos masonry ---*/
@@ -243,53 +203,20 @@ span {
 
 
 
-/* Buttons */
-.btn {
-    display: inline-block;
-    padding: 0.75rem 2rem;
-    font-weight: 600;
-    text-decoration: none;
-    transition: all 0.3s ease;
-    cursor: pointer;
-    border: none;
-    font-size: 1rem;
-    margin-top: 2rem;
-}
-
-.btn-primary {
-    background-color: var(--color-secondary);
-    color: var(--color-white);
-    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
-}
-
-.btn-primary:hover {
-    background-color: var(--color-secondary);
-}
-
-.btn-secondary {
-    background-color: #374151;
-    color:var(--color-white);
-    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
-}
-
-.btn-secondary:hover {
-    background-color: #111827;
-}
-
-
 /* ///////////////// MEDIA QUERIES ///////////////// */
 /* Tablet horizontal o desktop chico (max-width: 1080px) */
 @media (max-width: 1080px) {
 
     .main-nav {
-            flex-direction: row;
-            padding: 1rem 3rem;
+        flex-direction: row;
+        padding: 1rem 3rem;
     }
-    .hero-title {
+
+    .menu-hero-title {
         font-size: 2.8rem;
     }
 
-    .main-titles {
+    .menu-main-titles {
         font-size: 4rem;
     }
 
@@ -317,20 +244,20 @@ span {
 
 /* Tablet vertical (max-width: 768px) */
 @media (max-width: 768px) {
-    .hero-title {
+    .menu-hero-title {
         font-size: 2.5rem;
         margin-left: 2rem;
     }
 
-    .main-titles {
+    .menu-main-titles {
         font-size: 3.5rem;
     }
 
-    .hero-content span {
+    .menu-span {
         margin-left: 2.5rem;
     }
 
-    .hero-subtitle {
+    .menu-hero-subtitle {
         font-size: 1rem;
         line-height: 1.2rem;
     }
@@ -371,30 +298,30 @@ span {
         font-size: var(--font-size-sm);
     }
 
-    header {
+    #menu-header {
         padding-left: 1rem;
     }
 
-    .hero-content {
+    #menu-hero-content {
         padding: 0 0.5rem;
     }
 
-    .hero-title {
+    .menu-hero-title {
         font-size: 2rem;
         line-height: 2.2rem;
         margin-left: 1rem;
     }
 
-    .main-titles {
+    .menu-main-titles {
         font-size: 3rem;
         line-height: 3.2rem;
     }
 
-    .hero-content span {
+    .menu-span {
         margin-left: 1.5rem;
     }
 
-    .hero-subtitle {
+    .menu-hero-subtitle {
         font-size: 0.9rem;
         line-height: 1.1rem;
     }
@@ -427,17 +354,17 @@ span {
 /* Mobile 2 (max-width: 375px) */
 @media (max-width: 375px) {
 
-    .hero-title {
+    .menu-hero-title {
         font-size: 1.8rem;
         line-height: 2rem;
     }
 
-    .main-titles {
+    .menu-main-titles {
         font-size: 2.8rem;
         line-height: 3rem;
     }
 
-    .hero-content span {
+    .menu-span {
         margin-left: 1rem;
     }
 
@@ -461,7 +388,7 @@ span {
 
 /* CELULARES EN HORIZONTAL */
 @media screen and (max-height: 450px) and (orientation: landscape) {
-    header {
+    #menu-header {
         height: 100vh;
         min-height: auto;
         padding: 0.2rem 1rem;
@@ -485,7 +412,7 @@ span {
         height: 1.2rem;
     }
 
-    .hero-content {
+    #menu-hero-content {
         margin-top: -4rem;
         padding: 0;
         text-align: left;
@@ -494,30 +421,30 @@ span {
         transform-origin: left center;
     }
 
-    .hero-title {
+    .menu-hero-title {
         font-size: 1.5rem;
         line-height: 1.5rem;
         margin-left: 1.5rem;
         margin-bottom: 0;
     }
 
-    .main-titles {
+    .menu-main-titles {
         font-size: 2rem;
         line-height: 2rem;
         margin-bottom: 0;
     }
 
-    .hero-content span {
+    .menu-span {
         margin-left: 2rem;
     }
 
-    .hero-subtitle {
+    .menu-hero-subtitle {
         font-size: 0.7rem;
         line-height: 0.8rem;
         margin-top: 0.1rem;
     }
 
-    .hero-subtitle .subtitle-span {
+    .menu-hero-subtitle .menu-subtitle-span {
         display: inline;
         margin-left: 0;
     }
@@ -586,7 +513,7 @@ span {
         height: auto;
     }
 
-    
+
     footer {
         padding: 1rem;
     }
@@ -608,62 +535,66 @@ span {
 }
 
 @media screen and (max-height: 500px) and (orientation: landscape) {
-    header {
+    #menu-header {
         flex-direction: column;
         justify-content: center;
         padding-left: 1rem;
         text-align: center;
     }
 
-    .hero-content {
+    #menu-hero-content {
         margin-top: 0;
         max-width: 90vw;
         padding: 0 1rem;
     }
 
-    .hero-title,
-    .main-titles,
-    .span,        
-    .hero-subtitle 
-     {
+    .menu-hero-title,
+    .menu-main-titles,
+    .menu-span,
+    .menu-hero-subtitle {
         margin-left: 0;
         text-align: center;
         margin-bottom: 1rem;
     }
-  .hero-title {
-      font-size: 2.5rem;
-  }
- .main-titles, .span {
-     font-size: 4.5 rem;
- }
 
-.hero-subtitle {
-    font-size: 1.5rem;
-    line-height: 2rem;;
+    .menu-hero-title {
+        font-size: 2.5rem;
+    }
+
+    .menu-main-titles,
+    .menu-span {
+        font-size: 4.5 rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1.5rem;
+        line-height: 2rem;
+        ;
+    }
+
+
+    .masonry {
+        margin: 0 auto;
+        display: table;
+    }
+
+    .masonry-item img {
+        width: 100%;
+        height: auto;
+        display: block;
+        border-radius: var(--border-radius-sm);
+        margin-bottom: 1rem;
+    }
 }
 
-
-.masonry {
-    margin: 0 auto;
-    display: table;
-}
-
-.masonry-item img {
-    width: 100%;
-    height: auto;
-    display: block;
-    border-radius: var(--border-radius-sm);
-    margin-bottom: 1rem;
-}
-}
 @media screen and (max-height: 500px) and (orientation: landscape) {
     .masonry {
         column-count: 1;
         column-gap: 0.5rem;
         margin: 0 auto;
         display: table;
-        }
-    
+    }
+
     .masonry-item {
         margin-bottom: 1rem;
     }
