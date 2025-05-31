@@ -75,18 +75,19 @@ body {
 /*.subtitle-span {
     line-height:1rem ;
 }*/
-.menu-hero-subtitle {
+.menu-subtitle-span {
     font-family: var(--font-secondary);
     color: var(--color-white);
     font-weight: 400;
     font-size: 1.1rem;
     line-height: 1.3rem;
-    margin-bottom: 0;
     margin-top: 0.3rem;
+    display: block;
+    text-align: left;
+    margin-left: 4rem;
 }
 
-
-
+/*-- Fin hero--*/
 
 /*-- Fotos masonry -- */
 .container-menu {
@@ -247,7 +248,7 @@ body {
     }
 }
 
-
+/*---------------------------------------------*/
 
 /* Tablet vertical (max-width: 768px) */
 @media (max-width: 768px) {
@@ -298,7 +299,7 @@ body {
 }
 
 
-
+/*---------------------------------------------------------*/
 /* Mobile 1 (max-width: 480px) */
 @media (max-width: 480px) {
     body {
@@ -341,10 +342,6 @@ body {
         line-height: 1.7rem;
     }
 
-    .btn {
-        padding: 0.6rem 1.5rem;
-        font-size: 0.9rem;
-    }
 
     .footer-grid {
         grid-template-columns: 1fr;
@@ -357,7 +354,7 @@ body {
     }
 }
 
-
+/*-----------------------------------------------*/
 /* Mobile 2 (max-width: 375px) */
 @media (max-width: 375px) {
 
