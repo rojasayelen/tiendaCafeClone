@@ -1,0 +1,104 @@
+.contenedor-principal {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.intro-trabaja {
+    display: flex;
+    text-align: center;
+    margin-bottom: 40px;
+    flex-direction: column;
+    align-items: center;
+}
+.pre-titulo {
+    color: var(--color-secondary, #c7a17a);
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+    margin-bottom: 0;
+}
+
+.titulo {
+    color: var(--color-primary, #2d2a2a);
+    font-size: 3em;
+    font-weight: 800;
+    margin-top: 5px;
+    margin-bottom: 16px;
+}
+
+.descripcion {
+    font-size: 1.1em;
+    margin-bottom: 40px;
+}
+
+/* Usamos Flexbox en la fila para crear las columnas */
+.fila-form {
+    display: flex;
+    gap: 20px;
+}
+
+.fila-form .campo {
+    flex: 1; /* Cada campo ocupa el 50% del espacio */
+}
+
+form label {
+    display: block;
+    font-weight: 600;
+    color: #444;
+    margin-bottom: 8px;
+    font-size: 0.9em;
+}
+
+/* Espaciado para los campos que no están en una fila */
+form > label {
+    margin-top: 20px;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="tel"],
+form input[type="file"],
+form select,
+form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-family: inherit;
+    font-size: 1em;
+    margin-bottom: 20px; /* Espacio debajo de cada campo */
+}
+
+form textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.boton-enviar {
+    background-color: #c7a17a;
+    color: white;
+    font-weight: 700;
+    font-size: 13px;
+    width: 20%;
+    padding: 15px 30px;
+    border: none;
+    text-transform: uppercase;
+    border-radius: 4px;
+    cursor: pointer;
+    appearance: button;
+}
+
+
+@media (max-width: 768px) {
+    .titulo {
+        font-size: 2.2em;
+    }
+
+    /* En pantallas chicas, rompemos las columnas y apilamos los campos */
+    .fila-form {
+        flex-direction: column;
+        gap: 0;
+    }
+}

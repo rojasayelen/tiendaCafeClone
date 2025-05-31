@@ -7,8 +7,10 @@
   --color-secondary: #c7a17a;     /* Dorado claro / acento */
   --color-white: #ffffff;
   --color-text: #1e1e1e;
+  --color-text-secondary: #777777;  
   --color-background: #ffffff;
   --color-background-2: #f5f5f5;
+  --color-background-3: black;
 
   /* Tipografía */
   --font-main: 'Oswald', Arial, Helvetica, sans-serif;
@@ -48,6 +50,7 @@ body {
   line-height: 1.6;
 }
 
+
 /* ================= Estilos modo oscuro (a futuro) 
 @media (prefers-color-scheme: dark) {
   :root {
@@ -81,7 +84,18 @@ button:hover {
   opacity: 0.9;
 }
 
-.header-oscuro {
+.separador {
+  border: none;
+  height: 2px;
+  background-color: var(--color-secondary); /* o #000, #ccc, etc. */
+  margin: 1rem 0; /* espacio arriba y abajo */
+  width: 120px; /* o un valor como 80% */
+}
+
+.header-oscuro{
+  background-color: var(--color-background-3);
+  color: var(--color-white);
+  min-height: 90px;
+  padding: var(--spacing-md);
   height: 140px;
-  background-color: var(--color-primary);
 }
