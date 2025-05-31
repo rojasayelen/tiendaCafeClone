@@ -1,0 +1,12 @@
+
+.intro-tutoriales {
+    text-align: center;
+    padding: 40px 0;
+}
+
+.intro-tutoriales p{
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    
+}

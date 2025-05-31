@@ -33,7 +33,7 @@
     margin-bottom: 40px;
 }
 
-/* LA CLAVE: Usamos Flexbox en la fila para crear las columnas */
+/* Usamos Flexbox en la fila para crear las columnas */
 .fila-form {
     display: flex;
     gap: 20px;
