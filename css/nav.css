@@ -1,0 +1,56 @@
+/* -- Nav -- */
+
+.main-nav {
+  font-family: var(--font-main);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  padding: 0 1.5rem;
+  display: flex;
+  justify-content: flex-start;
+  gap: 8rem;
+  align-items: center;
+  color: var(--color-white);
+  transition: all 0.3s ease;
+  z-index: 1000;
+  margin-top: 40px;
+  padding: 0 40px;
+}
+
+.main-nav.scrolled {
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.95);
+  backdrop-filter: blur(10px);
+  box-shadow: var(--shadow-light);
+}
+
+.nav-logo {
+  height: 2rem;
+}
+
+.nav-menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style: none;
+  gap: 1rem;
+  font-size: 0.9rem;
+  font-weight: 400;
+}
+
+.nav-menu a {
+  color: var(--color-white);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.nav-menu a:hover {
+  color: RGBA(255, 255, 255, 0.8);
+}
+
+.nav-menu .active {
+  color: var(--color-secondary);
+  font-weight: 400;
+}
