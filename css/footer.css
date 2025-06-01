@@ -1,8 +1,12 @@
 /*------ Footer -------*/
 footer {
-    background-color: #111827;
+    background-color: var(--color-background-3);
     color: var(--color-white);
     padding: 2.5rem 1.5rem;
+    min-height: 363px;
+    display: flex;
+    align-items: center;
+
 }
 
 .footer-grid {

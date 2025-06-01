@@ -1,0 +1,55 @@
+.header{
+    background-color: var(--color-background-3)
+}
+
+.intro-tutoriales {
+    text-align: center;
+    padding: 40px 0;
+}
+
+.intro-tutoriales p{
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    color: var(--color-text-secondary);
+}
+
+.tutoriales-lista {
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+grid-template-rows: repeat(3, 1fr);
+grid-column-gap: 0px;
+grid-row-gap: 0px;
+}
+
+.div1 { grid-area: 2 / 2 / 3 / 3; }
+.div2 { grid-area: 2 / 4 / 3 / 5; }
+.div3 { grid-area: 3 / 2 / 4 / 3; }
+.div4 { grid-area: 3 / 4 / 4 / 5; }
+.div5 { grid-area: 4 / 2 / 5 / 3; }
+.div6 { grid-area: 4 / 4 / 5 / 5; }
+
+.div1{
+    background-image: url(../img/1\ -\ Tienda-de-Café-tutorial_119-scaled-460x306.jpg);
+}
+.div2{
+    background-image: url(../img/2-\ Cafeterra.jpg);
+}   
+
+.div3{
+    background-image: url(../img/3\ -\ chemex03_306x460.jpg);
+}
+.div4{
+    background-image: url(../img/4\ -\ aeropress02_306x460.jpg);
+}
+.div5{
+    background-image: url(../img/5\ -\ moka_306x460.jpg);
+}
+.div6{
+    background-image: url(../img/6\ -\ Tienda-de-Café-tutorial_281-scaled-460x306.jpg);
+}
+
+.vc-column{
+    padding: 40px;;
+}
+
