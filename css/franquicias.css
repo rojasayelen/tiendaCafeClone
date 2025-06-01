@@ -1,183 +1,205 @@
-/* css/franquicias.css */
 
-/* Contenedor principal */
-.franquicias-contenido {
-    max-width: 1200px;
-    margin: 50px auto; 
-    padding: 0 20px; 
+.contenedor-principal {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
 }
 
-.separador {
+.conoce-las-opciones{
+    display: flex;
+    text-align: center;
+    margin-bottom: 40px;
+    flex-direction: column;
+    align-items: center;
+}
+.pre-titulo{
+    color: var(--color-secondary, #c7a17a);
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+    margin-bottom: 0;
+}
+
+.titulo {
+    color: var(--color-primary, #2d2a2a);
+    font-size: 3em;
+    font-weight: 800;
+    margin-top: 5px;
+    margin-bottom: 16px;
+}
+
+.descripcion {
+    font-size: 1.1em;
+    margin-bottom: 40px;
+}
+
+/* LA CLAVE: Usamos Flexbox en la fila para crear las columnas */
+.fila-form {
+    display: flex;
+    gap: 20px;
+}
+
+.fila-form .campo {
+    flex: 1; /* Cada campo ocupa el 50% del espacio */
+}
+
+form label {
+    display: block;
+    font-weight: 600;
+    color: #444;
+    margin-bottom: 8px;
+    font-size: 0.9em;
+}
+
+/* Espaciado para los campos que no están en una fila */
+form > label {
+    margin-top: 20px;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="tel"],
+form input[type="file"],
+form select,
+form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-family: inherit;
+    font-size: 1em;
+    margin-bottom: 20px; /* Espacio debajo de cada campo */
+}
+
+form textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.boton-enviar {
+    background-color: #c7a17a;
+    color: white;
+    font-weight: 700;
+    font-size: 13px;
+    width: 20%;
+    padding: 15px 30px;
     border: none;
-    height: 2px;
-    background-color: var(--color-secondary);
-    margin: 1rem 0;
-    width: 120px;
+    text-transform: uppercase;
+    border-radius: 4px;
+    cursor: pointer;
+    appearance: button;
 }
 
-/* Encabezado */
-.franquicias-encabezado {
+.breadcrumb {
+    background-color: #f9f9f9;
+    padding: 10px 20px;
+    font-size: 14px;
+    color: #666;
+}
+
+.franquicias-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.hero-section {
     text-align: center;
     margin-bottom: 50px;
 }
 
-.franquicias-encabezado .franquicias-subtitulo {
-    font-family: 'Lato', sans-serif;
+.hero-section h1 {
     color: #c7a17a;
-    font-size: 16px;
-    line-height: 1.25;
-    font-weight: 400;
+    font-size: 24px;
     text-transform: uppercase;
-    margin-bottom: 12px;
+    margin-bottom: 15px;
+    font-weight: 600;
 }
 
-.franquicias-encabezado .franquicias-titulo-principal {
-    font-family: 'Oswald', sans-serif;
-    color: #333333;
-    font-size: 36px;
-    line-height: 1.11;
-    font-weight: 700;
+.hero-section h2 {
+    color: #2d2a2a;
+    font-size: 42px;
+    font-weight: 800;
     text-transform: uppercase;
-    margin-top: 0;
     margin-bottom: 30px;
 }
 
-.franquicias-encabezado .franquicias-descripcion {
-    font-family: 'Lato', sans-serif;
-    font-size: 14px;
-    line-height: 1.71;
-    color: #777777;
-    max-width: 80%;
+.hero-section p {
+    color: #777;
+    font-size: 16px;
+    line-height: 1.6;
+    max-width: 800px;
     margin: 0 auto;
 }
 
-/* Formulario - Estructura responsiva */
-.franquicias-formulario-fila {
-    display: flex;
-    flex-wrap: wrap;
-    margin-left: -10px;
-    margin-right: -10px;
+.form-section {
+    max-width: 800px;
+    margin: 0 auto;
 }
 
-.franquicias-formulario-campo {
-    flex: 1 1 100%;
-    padding-left: 10px;
-    padding-right: 10px;
-    margin-bottom: 20px;
-    box-sizing: border-box;
+.form-field {
+    margin-bottom: 25px;
 }
 
-@media (min-width: 768px) {
-    /* Cambio a 2 columnas en desktop */
-    .franquicias-formulario-campo {
-        flex: 1 1 50%;
-    }
-}
-
-/* Elementos del formulario */
-.franquicias-formulario label {
+.form-field label {
     display: block;
-    font-family: 'Lato', sans-serif;
-    font-size: 14px;
-    color: #333333;
-    font-weight: 600;
+    color: #2d2a2a;
+    font-size: 16px;
     margin-bottom: 8px;
-    line-height: 1.4;
 }
 
-.franquicias-formulario input[type="text"],
-.franquicias-formulario input[type="email"],
-.franquicias-formulario input[type="tel"] {
+.form-field input {
     width: 100%;
-    height: 45px;
-    padding: 0 15px;
-    font-family: 'Lato', sans-serif;
-    font-size: 14px;
-    color: #777777;
-    background-color: #FFFFFF;
-    border: 2px solid #E6E6E6;
-    border-radius: 0px;
-    box-shadow: none;
-    box-sizing: border-box;
-    transition: border-color 0.2s ease-in-out;
+    padding: 12px 15px;
+    border: 1px solid #e0e0e0;
+    border-radius: 3px;
+    font-size: 15px;
+    color: #2d2a2a;
+    background-color: #fff;
+    transition: border-color 0.3s ease;
 }
 
-.franquicias-formulario input:focus {
-    border-color: #b3b3b3;
+.form-field input:focus {
+    border-color: #c7a17a;
     outline: none;
 }
 
-/* Botón de envío */
-.franquicias-formulario-fila-boton {
-    justify-content: flex-start;
-    margin-top: 10px;
-    padding-left: 10px;
-    padding-right: 10px;
+.form-field input::placeholder {
+    color: #999;
 }
 
-.franquicias-formulario-boton-enviar {
-    font-family: 'Oswald', sans-serif;
-    background-color: #c7a17a;
-    color: #FFFFFF;
-    font-size: 16px;
-    font-weight: 600;
-    text-transform: uppercase;
-    padding: 12px 30px;
-    line-height: 1.5;
-    border: none;
-    border-radius: 0px;
-    cursor: pointer;
-    display: inline-block;
-    text-align: center;
-    transition: background-color 0.25s ease;
-}
-
-.franquicias-formulario-boton-enviar:hover {
-    background-color: #b2734f;
-}
-
-/* Mensajes de estado */
-.franquicias-formulario-mensaje {
-    text-align: center;
-    margin-top: 20px;
-    padding: 12px 15px;
-    border-radius: 0px;
-    font-family: 'Lato', sans-serif;
-    font-size: 14px;
-    display: none;
-}
-
-/* Clases para control de visibilidad con JS */
-.franquicias-formulario-mensaje.visible {
-    display: block;
-}
-.franquicias-formulario-mensaje.exito {
-    background-color: #f0f7f2;
-    color: #3c763d;
-    border: 1px solid #d6e9c6;
-}
-.franquicias-formulario-mensaje.error {
-    background-color: #fcf0f0;
-    color: #a94442;
-    border: 1px solid #ebccd1;
-}
-
-/* Media queries: ajustes para móviles */
-@media (max-width: 767px) {
-    .franquicias-contenido {
-        margin-top: 30px;
-        margin-bottom: 30px;
-        padding: 0 15px;
+@media (max-width: 768px) {
+    .franquicias-container {
+        padding: 20px;
     }
-    .franquicias-encabezado {
-        margin-bottom: 30px;
+
+    .hero-section h1 {
+        font-size: 20px;
     }
-    .franquicias-encabezado .franquicias-titulo-principal {
-        font-size: 30px; 
+
+    .hero-section h2 {
+        font-size: 32px;
+    }
+
+    .hero-section p {
+        font-size: 15px;
+        padding: 0 20px;
+    }
+
+    .form-field {
         margin-bottom: 20px;
     }
-    .franquicias-encabezado .franquicias-descripcion {
-        max-width: 100%; 
-        font-size: 13px;
-    }    
+}
+
+@media (max-width: 768px) {
+    .titulo {
+        font-size: 2.2em;
+    }
+
+    /* En pantallas chicas, rompemos las columnas y apilamos los campos */
+    .fila-form {
+        flex-direction: column;
+        gap: 0;
+    }
 }

@@ -1,90 +1,62 @@
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="./css/style.css" />
-    <link rel="stylesheet" href="./css/franquicias.css" />
-    <link rel="stylesheet" href="css/nav.css" />
-    <link rel="stylesheet" href="css/footer.css" />
-    <title>Franquicias</title>
-  </head>
-  <body>
-    <header class="header-oscuro">
-      <div id="nav"></div>
-    </header>
-    <main class="franquicias-contenido">
-      <section class="franquicias-encabezado">
-        <h3 class="franquicias-subtitulo">CONOCÉ TODAS LAS OPCIONES</h3>
-        <h1 class="franquicias-titulo-principal">CONVERTITE EN FRANQUICIADO</h1>
-        <hr class="separador" />
-        <p class="franquicias-descripcion">
-          Querés ser parte de este equipo? Dejanos tus datos para recibir mas
-          información, y nos pondremos en contacto para contarte todas las
-          posibilidades de tu próxima franquicia Tienda de Café!
-        </p>
-      </section>
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./css/style.css">
+        <link rel="stylesheet" href="./css/franquicias.css">
+        <link rel="stylesheet" href="css/menu-tienda-styles.css">
+        <title>Franquicias</title>
+    </head>
+    <body>
+        <div id="nav"></div>
+        <main class="contenedor-principal">
+            <section class="intro-trabaja">
+                <h1 class="pre-titulo">CONOCÉ TODAS LAS OPCIONES
+                </h1>
+                <h2 class="titulo">CONVERTITE EN FRANQUICIADO</h2>
+                <hr class="separador" />
+                <p class="descripcion">Querés ser parte de este equipo? Dejanos tus datos para recibir mas información, 
+                    y nos pondremos en contacto para contarte todas las posibilidades de tu próxima franquicia Tienda de Café!</p>
+            </section>
 
-      <form
-        id="formularioContactoFranquicia"
-        class="franquicias-formulario"
-        action="#"
-        method="POST"
-      >
-        <div class="franquicias-formulario-fila">
-          <div class="franquicias-formulario-campo">
-            <label for="nombre">Nombre</label>
-            <input type="text" id="nombre" name="nombre" required />
-          </div>
-          <div class="franquicias-formulario-campo">
-            <label for="apellido">Apellido</label>
-            <input type="text" id="apellido" name="apellido" required />
-          </div>
-        </div>
+            <form>
+                <div class="fila-form">
+                    <div class="campo">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" id="nombre">
+                    </div>
+                    <div class="campo">
+                        <label for="apellido">Apellido</label>
+                        <input type="text" id="apellido">
+                    </div>
+                </div>
 
-        <div class="franquicias-formulario-fila">
-          <div class="franquicias-formulario-campo">
-            <label for="email">E-mail</label>
-            <input type="email" id="email" name="email" required />
-          </div>
-          <div class="franquicias-formulario-campo">
-            <label for="telefono">Teléfono</label>
-            <input type="tel" id="telefono" name="telefono" />
-          </div>
-        </div>
-        <div class="franquicias-formulario-fila">
-          <div class="franquicias-formulario-campo">
-            <label for="como_llegaste">¿Cómo llegaste a nosotros?</label>
-            <input
-              type="text"
-              id="como_llegaste"
-              name="como_llegaste"
-              required
-            />
-          </div>
-          <div class="franquicias-formulario-campo">
-            <label for="zona_interes"
-              >¿En que zona te interesaría instalar la franquicia?</label
-            >
-            <input type="text" id="zona_interes" name="zona_interes" required />
-          </div>
-        </div>
-        <div class="franquicias-formulario-fila franquicias-formulario-fila-boton">
-          <button class="franquicias-formulario-boton-enviar" type="submit">
-            Enviar
-          </button>
-        </div>
-        <div
-          id="mensajeEstadoFormulario"
-          class="franquicias-formulario-mensaje"
-        ></div>
-      </form>
-    </main>
-    <div id="footer"></div>
-    <script src="./js/main.js"></script>
-    <script src="./js/index.js"></script>
-  </body>
+                <div class="fila-form">
+                    <div class="campo">
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email">
+                    </div>
+                    <div class="campo">
+                        <label for="telefono">Teléfono</label>
+                        <input type="tel" id="telefono">
+                    </div>
+                </div>
+                <div class="fila-form">
+                    <div class="campo">
+                        <label for="email">¿Cómo llegaste a nosotros?</label>
+                        <input type="email" id="email">
+                    </div>
+                    <div class="campo">
+                        <label for="telefono">¿En que zona te interesaría instalar la franquicia?</label>
+                        <input type="tel" id="telefono">
+                    </div>
+                </div>
+                <button class="boton-enviar" type="button">Enviar</button>
+            </form>
+        </main>
+        <div id="footer"> </div>
+        <script src="./js/main.js"></script>
+        <script src="./js/index.js"></script>
+    </body>
 </html>
