@@ -1,0 +1,204 @@
+.contenedor-principal {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.conoce-las-opciones{
+    display: flex;
+    text-align: center;
+    margin-bottom: 40px;
+    flex-direction: column;
+    align-items: center;
+}
+.pre-titulo{
+    color: var(--color-secondary, #c7a17a);
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+    margin-bottom: 0;
+}
+
+.titulo {
+    color: var(--color-primary, #2d2a2a);
+    font-size: 3em;
+    font-weight: 800;
+    margin-top: 5px;
+    margin-bottom: 16px;
+}
+
+.descripcion {
+    font-size: 1.1em;
+    margin-bottom: 40px;
+}
+
+/* LA CLAVE: Usamos Flexbox en la fila para crear las columnas */
+.fila-form {
+    display: flex;
+    gap: 20px;
+}
+
+.fila-form .campo {
+    flex: 1; /* Cada campo ocupa el 50% del espacio */
+}
+
+form label {
+    display: block;
+    font-weight: 600;
+    color: #444;
+    margin-bottom: 8px;
+    font-size: 0.9em;
+}
+
+/* Espaciado para los campos que no están en una fila */
+form > label {
+    margin-top: 20px;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="tel"],
+form input[type="file"],
+form select,
+form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-family: inherit;
+    font-size: 1em;
+    margin-bottom: 20px; /* Espacio debajo de cada campo */
+}
+
+form textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.boton-enviar {
+    background-color: #c7a17a;
+    color: white;
+    font-weight: 700;
+    font-size: 13px;
+    width: 20%;
+    padding: 15px 30px;
+    border: none;
+    text-transform: uppercase;
+    border-radius: 4px;
+    cursor: pointer;
+    appearance: button;
+}
+
+.breadcrumb {
+    background-color: #f9f9f9;
+    padding: 10px 20px;
+    font-size: 14px;
+    color: #666;
+}
+
+.franquicias-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.hero-section {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.hero-section h1 {
+    color: #c7a17a;
+    font-size: 24px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.hero-section h2 {
+    color: #2d2a2a;
+    font-size: 42px;
+    font-weight: 800;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+.hero-section p {
+    color: #777;
+    font-size: 16px;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.form-section {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.form-field {
+    margin-bottom: 25px;
+}
+
+.form-field label {
+    display: block;
+    color: #2d2a2a;
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+.form-field input {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #e0e0e0;
+    border-radius: 3px;
+    font-size: 15px;
+    color: #2d2a2a;
+    background-color: #fff;
+    transition: border-color 0.3s ease;
+}
+
+.form-field input:focus {
+    border-color: #c7a17a;
+    outline: none;
+}
+
+.form-field input::placeholder {
+    color: #999;
+}
+
+@media (max-width: 768px) {
+    .franquicias-container {
+        padding: 20px;
+    }
+
+    .hero-section h1 {
+        font-size: 20px;
+    }
+
+    .hero-section h2 {
+        font-size: 32px;
+    }
+
+    .hero-section p {
+        font-size: 15px;
+        padding: 0 20px;
+    }
+
+    .form-field {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .titulo {
+        font-size: 2.2em;
+    }
+
+    /* En pantallas chicas, rompemos las columnas y apilamos los campos */
+    .fila-form {
+        flex-direction: column;
+        gap: 0;
+    }
+}

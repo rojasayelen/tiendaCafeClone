@@ -1,0 +1,202 @@
+/* css/contacto.css */
+
+/* Contenedores principales */
+.contacto-pagina-contenido {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 0 20px;
+}
+
+.contacto-contenedor-principal {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    align-items: flex-start;
+}
+
+/* Columnas: izquierda (formulario) y derecha (redes) */
+.contacto-columna-izquierda {
+    flex: 2;
+    min-width: 300px;
+}
+
+.contacto-columna-derecha {
+    flex: 1;
+    min-width: 280px;
+}
+
+/* Títulos y descripción */
+.contacto-titulo-wrapper {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #e6e6e6;
+    padding-bottom: 15px;
+    position: relative;
+}
+
+.contacto-titulo-principal {
+    font-family: 'Oswald', sans-serif;
+    color: #333333;
+    font-size: 24px;
+    line-height: 1.41;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.contacto-descripcion {
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+    line-height: 1.7;
+    color: #777777;
+    margin-bottom: 30px;
+}
+
+/* Formulario */
+.contacto-formulario-campo {
+    margin-bottom: 20px;
+}
+
+.contacto-formulario label {
+    display: block;
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+    color: #333333;
+    font-weight: 700;
+    margin-bottom: 8px;
+    line-height: 1.4;
+}
+
+.contacto-formulario input[type="text"],
+.contacto-formulario input[type="email"],
+.contacto-formulario textarea {
+    width: 100%;
+    padding: 10px 15px;
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+    color: #777777;
+    background-color: #FFFFFF;
+    border: 2px solid #E6E6E6;
+    border-radius: 0px;
+    box-sizing: border-box;
+    transition: border-color 0.2s ease-in-out;
+}
+
+.contacto-formulario textarea {
+    min-height: 120px;
+}
+
+.contacto-formulario input:focus,
+.contacto-formulario textarea:focus {
+    border-color: #b3b3b3;
+    outline: none;
+}
+
+.contacto-formulario-boton-enviar {
+    font-family: 'Oswald', sans-serif;
+    background-color: #c7a17a;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding: 12px 30px;
+    line-height: 1.5;
+    border: none;
+    border-radius: 0px;
+    cursor: pointer;
+    transition: background-color 0.25s ease;
+}
+
+.contacto-formulario-boton-enviar:hover {
+    background-color: #b2734f;
+}
+
+/* Mensajes de estado */
+.contacto-formulario-mensaje {
+    margin-top: 15px;
+    padding: 10px 15px;
+    border-radius: 0px;
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+    display: none;
+}
+
+.contacto-formulario-mensaje.visible {
+    display: block;
+}
+
+.contacto-formulario-mensaje.exito {
+    background-color: #f0f7f2;
+    color: #3c763d;
+    border: 1px solid #d6e9c6;
+}
+
+.contacto-formulario-mensaje.error {
+    background-color: #fcf0f0;
+    color: #a94442;
+    border: 1px solid #ebccd1;
+}
+
+/* Redes sociales - Nuevos estilos */
+.contacto-redes-sociales {
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+  }
+  
+  .contacto-red-social-link {
+    display: flex;
+    align-items: center;
+    color: #333;
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    margin-bottom: 20px;
+    text-decoration: none;   
+    padding: 12px 15px;
+    
+  }
+  
+  .contacto-red-social-link i {
+    font-size: 36px; 
+    margin-right: 15px;  
+    width: 40px;
+    text-align: center;
+  }
+  
+  .contacto-red-social-link span {
+    font-size: 18px; 
+    font-weight: 500;
+  }
+  
+  /* Estilos específicos para Instagram */
+  .contacto-red-social-link.instagram i {
+    background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+
+/* Media queries: móviles */
+@media (max-width: 767px) {
+    .contacto-contenedor-principal {
+        gap: 30px;
+    }
+
+    .contacto-columna-izquierda,
+    .contacto-columna-derecha {
+        flex-basis: 100%;
+    }
+
+    .contacto-pagina-contenido {
+        margin-top: 30px;
+        margin-bottom: 30px;
+        padding: 0 15px;
+    }
+
+    .contacto-titulo-principal {
+        font-size: 22px;
+    }
+
+    .contacto-descripcion {
+        font-size: 13px;
+    }
+}

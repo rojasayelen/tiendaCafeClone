@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./css/contacto.css" />
+  <link rel="stylesheet" href="./css/nav.css" />
+  <link rel="stylesheet" href="./css/footer.css" />
+
+  <title>Contacto</title>
+
+</head>
+<body>
+  <header class="header-oscuro">
+    <div id="nav"></div>
+  </header>
+  <main class="contacto-pagina-contenido">
+    <div class="contacto-contenedor-principal">
+      <section class="contacto-columna-izquierda">
+        <div class="contacto-titulo-wrapper">
+          <h1 class="contacto-titulo-principal">COMUNICATE CON NOSOTROS</h1>
+        </div>
+        <p class="contacto-descripcion">
+          Ante cualquier consulta no dudes en comunicarte. Dejá tus datos y
+          consulta utilizando el formulario a continuación y nos contactaremos
+          a la brevedad.
+        </p>
+
+        <form
+          id="formularioDeContactoGeneral"
+          class="contacto-formulario"
+          action="#"
+          method="POST"
+        >
+          <div class="contacto-formulario-campo">
+            <label for="nombreContacto">Nombre</label>
+            <input
+              type="text"
+              id="nombreContacto"
+              name="nombreContacto"
+              required
+            />
+          </div>
+          <div class="contacto-formulario-campo">
+            <label for="emailContacto">E-mail</label>
+            <input
+              type="email"
+              id="emailContacto"
+              name="emailContacto"
+              required
+            />
+          </div>
+          <div class="contacto-formulario-campo">
+            <label for="asuntoContacto">Asunto</label>
+            <input type="text" id="asuntoContacto" name="asuntoContacto" />
+          </div>
+          <div class="contacto-formulario-campo">
+            <label for="mensajeContacto">Mensaje</label>
+            <textarea
+              id="mensajeContacto"
+              name="mensajeContacto"
+              rows="6"
+              required
+            ></textarea>
+          </div>
+          <div class="contacto-formulario-campo">
+            <button class="contacto-formulario-boton-enviar" type="submit">
+              Enviar
+            </button>
+          </div>
+          <div
+            id="mensajeEstadoFormContacto"
+            class="contacto-formulario-mensaje"
+          ></div>
+        </form>
+      </section>       
+      <aside class="contacto-columna-derecha">
+        <div class="contacto-titulo-wrapper">
+          <h2 class="contacto-titulo-principal">NUESTRAS REDES SOCIALES</h2>
+        </div>
+        <div class="contacto-redes-sociales">
+          <a href="https://www.facebook.com/Tiendadecafe" target="_blank" class="contacto-red-social-link">
+            <i class="fab fa-facebook"></i>            
+          </a>
+          <a href="https://www.instagram.com/tiendadecafear/" target="_blank" class="contacto-red-social-link">
+            <i class="fab fa-instagram"></i>            
+          </a>            
+        </div>
+      </aside>
+    </div>
+  </main>
+  <div id="footer"></div>
+  <script src="./js/main.js"></script>
+  <script src="./js/index.js"></script>
+</body>
+</html>
