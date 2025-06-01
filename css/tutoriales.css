@@ -5,13 +5,18 @@
 .intro-tutoriales {
     text-align: center;
     padding: 40px 0;
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+   
 }
 
-.intro-tutoriales p{
+.intro-tutoriales > p{
     max-width: 90%;
     margin-left: auto;
     margin-right: auto;
     color: var(--color-text-secondary);
+    font-family: var(--font-inter);
 }
 
 .tutoriales-lista {
@@ -19,7 +24,7 @@ display: grid;
 /* grid-template-columns: repeat(2, 1fr); */
 grid-template-columns: 35% 35%;
 justify-content: center;
-gap: 20px;
+gap: 60px;
 padding: 20px 0;
 }
 
@@ -56,10 +61,10 @@ padding: 20px 0;
 
 .tutorial-item .content {
     position: relative; /* o z-index: 1; */
+    cursor: pointer;
 }
 .tutorial-item .tipo-cafe {
     margin: 0;
-    font-size: 2em; /* Tamaño grande para el título */
     font-weight: 700;
     text-transform: uppercase;
 }
@@ -72,6 +77,11 @@ padding: 20px 0;
     letter-spacing: 1px;
     border-bottom: 2px solid white;
     padding-bottom: 2px;
+}
+
+.tutorial-item h4{
+    font-size: var(--spacing-lg);
+    font-family: var(--font-main);
 }
 
 .div1{
