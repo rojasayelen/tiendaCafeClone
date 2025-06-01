@@ -136,39 +136,43 @@
     border: 1px solid #ebccd1;
 }
 
-/* Redes sociales */
+/* Redes sociales - Nuevos estilos */
 .contacto-redes-sociales {
+    display: flex;
+    flex-direction: column;
     margin-top: 15px;
-}
-
-.contacto-red-social-link {
-    display: inline-flex;
+  }
+  
+  .contacto-red-social-link {
+    display: flex;
     align-items: center;
     color: #333;
     font-family: 'Lato', sans-serif;
     font-size: 16px;
-    margin-right: 25px;
-    margin-bottom: 15px;
-    text-decoration: none;
-    transition: color 0.2s ease;
-}
-
-.contacto-red-social-link i {
-    font-size: 28px;
-    margin-right: 10px;
-    transition: color 0.2s ease;
-}
-
-.contacto-red-social-link:hover,
-.contacto-red-social-link:hover i {
-    color: #c7a17a;
-}
-
-.contacto-red-social-link i {
-    margin-right: 10px;
-    font-size: 1.2em;
-    width: 20px;
+    margin-bottom: 20px;
+    text-decoration: none;   
+    padding: 12px 15px;
+    
+  }
+  
+  .contacto-red-social-link i {
+    font-size: 36px; 
+    margin-right: 15px;  
+    width: 40px;
     text-align: center;
+  }
+  
+  .contacto-red-social-link span {
+    font-size: 18px; 
+    font-weight: 500;
+  }
+  
+  /* Estilos específicos para Instagram */
+  .contacto-red-social-link.instagram i {
+    background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
   }
 
 /* Media queries: móviles */
