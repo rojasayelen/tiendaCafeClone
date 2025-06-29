@@ -18,6 +18,8 @@
   --font-size-lg: 20px;
   --font-size-sm: 14px;
 
+  --font-secondary: 'Lato', Arial, Helvetica, sans-serif;
+
   /* Espaciado */
   --spacing-xs: 4px;
   --spacing-sm: 8px;
@@ -47,8 +49,7 @@ body {
   font-size: var(--font-size-base);
   color: var(--color-text);
   background-color: var(--color-background);
-  line-height: 1.6;
-}
+  }
 
 
 /* ================= Estilos modo oscuro (a futuro) 
@@ -98,4 +99,8 @@ button:hover {
   min-height: 90px;
   padding: var(--spacing-md);
   height: 140px;
+}
+
+footer {
+  font-family: var(--font-secondary);
 }

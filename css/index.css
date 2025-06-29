@@ -14,20 +14,21 @@
 }
 
 .subtitle {
-  font-size: 1.5rem;
-  margin-bottom: 0.5rem;
+  font-family: var(--font-main);
+  font-size: 2.5rem;
+  font-weight: 200;
   color: var(--color-white);
 }
 
 h1 {
-  font-size: 3rem;
+  font-size: 3.5rem;
   font-weight: 800;
-  margin: 0 0 1rem;
   color: var(--color-white);
 }
 
 .description {
-  font-size: 1rem;
+  font-family: var(--font-secondary);
+  font-size: 0.8rem;
   line-height: 1.6;
   margin-bottom: 1.5rem;
   color: var(--color-white);
@@ -435,17 +436,16 @@ h2 {
 }
 
 .cta-sucursales p {
-  font-size: 1.2rem;
-  margin-bottom: 0.5rem;
+  font-size: 2.5rem;
+  font-weight: 200;
   text-transform: uppercase;
   letter-spacing: 1px;
 }
 
 .cta-sucursales h2 {
-  font-size: 3rem;
-  font-weight: bold;
+  font-size: 3.6rem;
+  font-weight: 700;
   color: #d2a374;
-  margin: 0.5rem 0;
 }
 
 .cta-sucursales .subtexto {
