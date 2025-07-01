@@ -13,6 +13,7 @@ function incluirHTML(id, archivo) {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-  incluirHTML("nav", "/components/nav.html");
-  incluirHTML("footer", "/components/footer.html");
+  incluirHTML("nav", "components/nav.html");
+  incluirHTML("footer", "components/footer.html");
+ 
 });
