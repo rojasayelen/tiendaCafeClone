@@ -10,27 +10,28 @@
 }
 
 .text-container {
-  max-width: 500px;
+  max-width: 40%;
 }
 
 .subtitle {
-  font-size: 1.5rem;
-  margin-bottom: 0.5rem;
+  font-family: var(--font-main);
+  font-size: 2.5rem;
+   font-weight:200;
   color: var(--color-white);
+  
 }
 
 h1 {
-  font-size: 3rem;
-  font-weight: 800;
   margin: 0 0 1rem;
-  color: var(--color-white);
 }
 
 .description {
+  font-family: var(--font-secondary);
   font-size: 1rem;
   line-height: 1.6;
   margin-bottom: 1.5rem;
   color: var(--color-white);
+  margin-left: 4rem;
 }
 
 .hero-slider {
@@ -124,9 +125,10 @@ h1 {
 }
 
 h2 {
-  font-size: 36px;
-  margin-bottom: var(--spacing-lg);
-  text-align: center;
+  font-size: 2.5rem;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+/*  text-align: center;*/
 }
 
 .separador {
@@ -381,6 +383,7 @@ h2 {
 }
 
 .variedad p {
+  font-family: var(--font-secondary);
   color: #444;
   font-size: 0.95rem;
   line-height: 1.4;
@@ -434,29 +437,31 @@ h2 {
   margin: 0 auto;
 }
 
-.cta-sucursales p {
-  font-size: 1.2rem;
-  margin-bottom: 0.5rem;
-  text-transform: uppercase;
+ .cta-sucursales p {
+  margin: 0;
   letter-spacing: 1px;
-}
+} 
 
 .cta-sucursales h2 {
-  font-size: 3rem;
+  font-size: 4.2rem;
   font-weight: bold;
   color: #d2a374;
   margin: 0.5rem 0;
 }
 
 .cta-sucursales .subtexto {
+  font-family: var(--font-secondary);
   font-size: 1rem;
   color: #fff;
   margin-bottom: 2rem;
 }
 
+
 .btn-cta {
+  font-family: var(--font-secondary);
   display: inline-block;
   padding: 0.8rem 2rem;
+  margin-left: 4rem;;
   border: 2px solid #fff;
   color: #fff;
   text-decoration: none;
@@ -464,6 +469,11 @@ h2 {
   transition: background-color 0.3s, color 0.3s;
 }
 
+.btn-sucursal {
+  margin-left: 0;
+} 
+
+                 
 .btn-cta:hover {
   background-color: #ffffff00;
   color: #cccccc;

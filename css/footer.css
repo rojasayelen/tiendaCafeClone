@@ -6,7 +6,7 @@ footer {
     min-height: 363px;
     display: flex;
     align-items: center;
-
+    flex-direction: column;
 }
 
 .footer-grid {
@@ -40,6 +40,7 @@ footer {
 }
 
 .footer-section ul li {
+    font-family: var(--font-secondary);
     margin-bottom: 0.5rem;
 }
 
@@ -96,6 +97,16 @@ footer {
     width: 24px;
     height: 24px;
 }
+
+.footer-copyright {
+    font-family: var(--font-secondary);
+    font-size: 0.75rem;
+    text-align: center;
+    color: var(--color-white);
+    margin-top: 2rem;
+    width: 100%;
+}
+
 
 /* Responsive */
 @media (max-width: 768px) {
