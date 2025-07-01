@@ -3,11 +3,13 @@
 ================================ */
 :root {
   /* Colores */
-  --color-primary: #2d2a2a;       /* Marrón oscuro / fondo */
-  --color-secondary: #c7a17a;     /* Dorado claro / acento */
+  --color-primary: #2d2a2a;
+  /* Marrón oscuro / fondo */
+  --color-secondary: #c7a17a;
+  /* Dorado claro / acento */
   --color-white: #ffffff;
   --color-text: #1e1e1e;
-  --color-text-secondary: #777777;  
+  --color-text-secondary: #777777;
   --color-background: #ffffff;
   --color-background-2: #f5f5f5;
   --color-background-3: #111111;
@@ -17,6 +19,7 @@
   --font-size-base: 16px;
   --font-size-lg: 20px;
   --font-size-sm: 14px;
+  --font-secondary: 'Lato', Arial, Helvetica, sans-serif;
 
   /* Espaciado */
   --spacing-xs: 4px;
@@ -47,9 +50,41 @@ body {
   font-size: var(--font-size-base);
   color: var(--color-text);
   background-color: var(--color-background);
-  line-height: 1.6;
+  font-family: var(--font-secondary);
 }
 
+.general-subtitle {
+  font-family: var(--font-main);
+  color: var(--color-white);
+  font-size: 3rem;
+  font-weight: 200;
+  margin-bottom: 0;
+  line-height: 3.2rem;
+  margin-left: 4rem;
+}
+
+.general-span {
+  font-family: var(--font-main);
+  color: var(--color-white);
+  font-weight: 600;
+  font-size: 4.3rem;
+  line-height: 4.9rem;
+  display: block;
+  text-align: left;
+  margin-left: 4rem;
+}
+
+.general-description {
+  font-family: var(--font-secondary);
+  color: var(--color-white);
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 1.3rem;
+  margin-top: 0.3rem;
+  display: block;
+  text-align: left;
+  margin-left: 4rem;
+}
 
 /* ================= Estilos modo oscuro (a futuro) 
 @media (prefers-color-scheme: dark) {
@@ -61,7 +96,9 @@ body {
 =================================================== */
 
 /* Ejemplo de uso de variables */
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   color: var(--color-text);
 }
 
@@ -87,12 +124,15 @@ button:hover {
 .separador {
   border: none;
   height: 2px;
-  background-color: var(--color-secondary); /* o #000, #ccc, etc. */
-  margin: 1rem 0; /* espacio arriba y abajo */
-  width: 120px; /* o un valor como 80% */
+  background-color: var(--color-secondary);
+  /* o #000, #ccc, etc. */
+  margin: 1rem 0;
+  /* espacio arriba y abajo */
+  width: 120px;
+  /* o un valor como 80% */
 }
 
-.header-oscuro{
+.header-oscuro {
   background-color: var(--color-background-3);
   color: var(--color-white);
   min-height: 90px;

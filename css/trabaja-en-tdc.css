@@ -1,6 +1,6 @@
 .contenedor-principal {
     max-width: 800px;
-    margin: 40px auto;
+    margin: 10rem auto 2.5rem auto;
     padding: 20px;
 }
 
@@ -13,36 +13,43 @@
 }
 .pre-titulo {
     color: var(--color-secondary, #c7a17a);
-    font-size: 16px;
-    line-height: 20px;
+    font-family: var(--font-secondary);
+    font-size: 1rem;
+    font-weight:400;
+    line-height: 1.25rem;
     text-transform: uppercase;
     margin-bottom: 0;
 }
 
 .titulo {
     color: var(--color-primary, #2d2a2a);
-    font-size: 3em;
+    font-size: 2rem;
     font-weight: 800;
-    margin-top: 5px;
-    margin-bottom: 16px;
+    margin-top: 0.4rem;
+    margin-bottom: 1rem;
 }
 
 .descripcion {
-    font-size: 1.1em;
-    margin-bottom: 40px;
+    font-size: 0.85rem;
+    margin-bottom: 2.5rem;
+    color: var(--color-text-secondary);
 }
 
 /* Usamos Flexbox en la fila para crear las columnas */
 .fila-form {
+    font-family: var(--font-secondary);
     display: flex;
     gap: 20px;
 }
 
 .fila-form .campo {
-    flex: 1; /* Cada campo ocupa el 50% del espacio */
+    font-family: var(--font-secondary);
+    flex: 1; 
 }
 
 form label {
+    font-family: var(--font-secondary);
+    font-weight: 300;
     display: block;
     font-weight: 600;
     color: #444;
