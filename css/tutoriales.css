@@ -1,5 +1,5 @@
-.header{
-    background-color: var(--color-background-3)
+.header {
+    background-color: var(--color-background-3);
 }
 
 .intro-tutoriales {
@@ -7,49 +7,229 @@
     padding: 40px 0;
 }
 
-.intro-tutoriales p{
+.intro-tutoriales p {
+    font-weight: 200;
+    font-size: 1.1rem;
     max-width: 90%;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0.8rem auto;
     color: var(--color-text-secondary);
 }
 
-.tutoriales-lista {
-display: grid;
-grid-template-columns: repeat(2, 1fr);
-grid-template-rows: repeat(3, 1fr);
-grid-column-gap: 0px;
-grid-row-gap: 0px;
+#tips-title {
+    margin: 1.5rem auto;
 }
 
-.div1 { grid-area: 2 / 2 / 3 / 3; }
-.div2 { grid-area: 2 / 4 / 3 / 5; }
-.div3 { grid-area: 3 / 2 / 4 / 3; }
-.div4 { grid-area: 3 / 4 / 4 / 5; }
-.div5 { grid-area: 4 / 2 / 5 / 3; }
-.div6 { grid-area: 4 / 4 / 5 / 5; }
+.tips {
+    font-size: 1.2rem;
+    font-style: italic;
+    margin: 0 auto;
+    line-height: 1.2rem;
+}
 
-.div1{
+#final {
+    margin-top: 3rem;
+}
+
+.tutoriales-lista {
+    display: grid;
+    grid-template-columns: repeat(2, 0.9fr);
+    grid-row-gap: 2rem;
+    grid-column-gap: 1rem;
+    max-width: 80%;
+    margin: 0 auto 3.5rem auto;
+}
+
+.vc-column {
+    padding: 1.5rem;
+    overflow: hidden;
+    position: relative;
+    border-radius: 0.5rem;
+    
+}
+
+.vc-column>div {
+    min-height: 20rem;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.2rem;
+    overflow: hidden;
+ }
+
+/* Pseudo-elemento para aplicar el fondo y el zoom */
+.vc-column>div::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 0;
+    transition: transform 0.6s ease, filter 0.6s ease;
+}
+
+/* Aplica el efecto al hacer hover */
+.vc-column>div:hover::before {
+    transform: scale(1.1);
+    filter: brightness(0.4);
+}
+
+/* Eleva el contenido por encima del pseudo-elemento */
+.vc-column>div .content {
+    position: relative;
+    z-index: 1;
+}
+
+.content h4 {
+    font-size: 1.5rem;
+    color: var(--color-white);
+    margin-bottom: 1rem;
+}
+
+.content p {
+    font-family: var(--font-secondary);
+    font-size: 1rem;
+    color: var(--color-white);
+    text-transform: uppercase;
+    text-decoration: underline;
+    text-decoration-color: var(--color-secondary);
+    text-underline-offset: 0.3rem;
+    text-decoration-thickness: 2px;
+}
+
+/* Asignación del fondo en el ::before de cada div */
+.div1::before {
     background-image: url(../img/1\ -\ Tienda-de-Café-tutorial_119-scaled-460x306.jpg);
 }
-.div2{
-    background-image: url(../img/2-\ Cafeterra.jpg);
-}   
 
-.div3{
+.div2::before {
+    background-image: url(../img/2-\ Cafeterra.jpg);
+}
+
+.div3::before {
     background-image: url(../img/3\ -\ chemex03_306x460.jpg);
 }
-.div4{
+
+.div4::before {
     background-image: url(../img/4\ -\ aeropress02_306x460.jpg);
 }
-.div5{
+
+.div5::before {
     background-image: url(../img/5\ -\ moka_306x460.jpg);
 }
-.div6{
+
+.div6::before {
     background-image: url(../img/6\ -\ Tienda-de-Café-tutorial_281-scaled-460x306.jpg);
 }
 
-.vc-column{
-    padding: 40px;;
+
+/* .header {
+    background-color: var(--color-background-3);
 }
 
+.intro-tutoriales {
+    text-align: center;
+    padding: 40px 0;
+}
+
+.intro-tutoriales p {
+    font-weight: 200;
+    font-size: 1.1rem;
+    max-width: 90%;
+    margin: 0.8rem auto;
+    color: var(--color-text-secondary);
+}
+
+#tips-title {
+    margin: 1.5rem auto;
+}
+
+.tips {
+    font-size: 1.2rem;
+    font-style: italic;
+    margin: 0 auto;
+    line-height: 1.2rem;
+}
+
+#final {
+    margin-top: 3rem;
+}
+
+.tutoriales-lista {
+    display: grid;
+    grid-template-columns: repeat(2, 0.9fr);
+    grid-row-gap: 2rem;
+    grid-column-gap: 1rem;
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+.vc-column {
+    padding: 1.5rem;
+    overflow: hidden;
+    position: relative;
+    border-radius: 0.5rem;
+}
+
+.vc-column>div {
+    min-height: 18rem;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.2rem;
+    position: relative;
+    transition: transform 0.4s ease, filter 0.4s ease;
+    will-change: transform;
+    border-radius: 0.5rem;
+}
+
+.vc-column>div:hover {
+    transform: scale(1.05);
+    filter: brightness(0.8);
+}
+
+.content h4 {
+    font-size: 1.5rem;
+    color: var(--color-white);
+    margin-bottom: 1rem;
+}
+
+.content p {
+    font-family: var(--font-secondary);
+    font-size: 1rem;
+    color: var(--color-white);
+    text-transform: uppercase;
+    text-decoration: underline;
+    text-decoration-color: var(--color-secondary);
+    text-underline-offset: 0.3rem;
+    text-decoration-thickness: 2px;
+}
+
+.div1 {
+    background-image: url(../img/1\ -\ Tienda-de-Café-tutorial_119-scaled-460x306.jpg);
+}
+
+.div2 {
+    background-image: url(../img/2-\ Cafeterra.jpg);
+}
+
+.div3 {
+    background-image: url(../img/3\ -\ chemex03_306x460.jpg);
+}
+
+.div4 {
+    background-image: url(../img/4\ -\ aeropress02_306x460.jpg);
+}
+
+.div5 {
+    background-image: url(../img/5\ -\ moka_306x460.jpg);
+}
+
+.div6 {
+    background-image: url(../img/6\ -\ Tienda-de-Café-tutorial_281-scaled-460x306.jpg);
+}
+ */
