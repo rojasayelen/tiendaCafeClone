@@ -1,21 +1,23 @@
 .contenedor-principal {
-    max-width: 800px;
+    width: 90%;
     margin: 10rem auto 2.5rem auto;
-    padding: 20px;
+    padding: 1.25rem;
+    overflow-x: hidden;
 }
 
 .intro-trabaja {
     display: flex;
     text-align: center;
-    margin-bottom: 40px;
+    margin-bottom: 2.5rem;
     flex-direction: column;
     align-items: center;
 }
+
 .pre-titulo {
     color: var(--color-secondary, #c7a17a);
     font-family: var(--font-secondary);
     font-size: 1rem;
-    font-weight:400;
+    font-weight: 400;
     line-height: 1.25rem;
     text-transform: uppercase;
     margin-bottom: 0;
@@ -44,7 +46,7 @@
 
 .fila-form .campo {
     font-family: var(--font-secondary);
-    flex: 1; 
+    flex: 1;
 }
 
 form label {
@@ -58,7 +60,7 @@ form label {
 }
 
 /* Espaciado para los campos que no están en una fila */
-form > label {
+form>label {
     margin-top: 20px;
 }
 
@@ -69,13 +71,13 @@ form input[type="file"],
 form select,
 form textarea {
     width: 100%;
-    padding: 12px;
+    padding: 0.8rem;
     border: 1px solid #ddd;
-    border-radius: 4px;
+    border-radius: 0.25rem;
     box-sizing: border-box;
     font-family: inherit;
     font-size: 1em;
-    margin-bottom: 20px; /* Espacio debajo de cada campo */
+    margin-bottom: 1.25rem;
 }
 
 form textarea {
@@ -86,10 +88,11 @@ form textarea {
 .boton-enviar {
     background-color: #c7a17a;
     color: white;
-    font-weight: 700;
-    font-size: 13px;
+    font-family: var(--font-secondary);
+    font-weight: 500;
+    font-size: 0.8rem;
     width: 20%;
-    padding: 15px 30px;
+    padding: 1rem 1.9rem;
     border: none;
     text-transform: uppercase;
     border-radius: 4px;
@@ -103,7 +106,11 @@ form textarea {
         font-size: 2.2em;
     }
 
-    /* En pantallas chicas, rompemos las columnas y apilamos los campos */
+    .boton-enviar {
+        width: 40%;
+    }
+
+
     .fila-form {
         flex-direction: column;
         gap: 0;
