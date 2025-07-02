@@ -1,4 +1,5 @@
 # tiendaCafeClone
+
 Practica de elaboracion de un sitio con varias funcionalidades
 
 # Páginas del sitio:
@@ -6,16 +7,20 @@ Practica de elaboracion de un sitio con varias funcionalidades
 - index.html: La página principal https://tiendadecafe.com.ar/
 - tienda.html: La página Nuestro Café https://tiendadecafe.com.ar/tienda/
 - tutoriales.html: La página Tutoriales https://tiendadecafe.com.ar/tutoriales/
-- menu-tienda.html: La página Nuestro Menú https://tiendadecafe.com.ar/menu-tienda/
-- trabaja-en-tdc.html: La página Trabajá con Nosotros https://tiendadecafe.com.ar/trabaja-en-tdc/
-- franquicias.html: La página Franquicias https://tiendadecafe.com.ar/franquicias/
+- menu-tienda.html: La página Nuestro Menú
+  https://tiendadecafe.com.ar/menu-tienda/
+- trabaja-en-tdc.html: La página Trabajá con Nosotros
+  https://tiendadecafe.com.ar/trabaja-en-tdc/
+- franquicias.html: La página Franquicias
+  https://tiendadecafe.com.ar/franquicias/
 - contacto.html: La página Contacto https://tiendadecafe.com.ar/contacto/
 
 # Estructura del proyecto
+
 ```
-tratrabajo_practico_obligatorio1/
+trabajo_practico_obligatorio1/
 │
-├── index.html 
+├── index.html
 ├── tienda.html
 ├── tutoriales.html
 ├── menu-tienda-html
@@ -32,8 +37,8 @@ tratrabajo_practico_obligatorio1/
 │
 ├── js/
 │ └── main.js
-│ └── index.js 
-│ └── menu-tienda.js 
+│ └── index.js
+│ └── menu-tienda.js
 │
 ├── img/
 │ ├── logo.png # Ejemplo de logo o imagen
@@ -46,7 +51,7 @@ tratrabajo_practico_obligatorio1/
 
 ```
 
-# 🛠️ Configuración variables globales de style.css
+# Configuración variables globales de style.css
 
 ```
 /* ================================

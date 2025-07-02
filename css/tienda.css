@@ -18,8 +18,8 @@
 }
 
 /* Tablet horizontal */
-@media (max-width: 1080px) {
-}
+@media (max-width: 1080px) {}
+
 /* Tablet vertical */
 @media (max-width: 768px) {
   .grid-contenedor .producto-card {
@@ -27,9 +27,9 @@
     flex: 1 1 50%;
   }
 }
+
 /* Mobil 1 */
-@media (max-width: 480px) {
-}
+@media (max-width: 480px) {}
+
 /* Mobil 2 */
-@media (max-width: 375px) {
-}
+@media (max-width: 375px) {}
